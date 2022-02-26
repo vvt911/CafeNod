@@ -120,12 +120,27 @@ input[type='text']:focus {
     font-size: 24px;
     text-decoration: none;
     padding: 0 9px;
-
+    display: inline-block;
 }
 .cafenod .footer-icon .ti-icon {
     color: #C7A17A;
-
 }
+
+/* hover icon */
+.footer-icon .icon-container{
+    width: 24px;
+    height: 36px;
+    overflow: hidden;
+}
+.ti-icon {
+    padding: 10px 0 2px 0;
+    display: block;
+    transition: transform .5s ease-in-out;
+}
+.footer-icon .icon-container:hover .ti-icon {
+    transform: translate3d(0px, -36px, 0px);
+}
+
 
 /* contact */
 .footer-info h3 {
