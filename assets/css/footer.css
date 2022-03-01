@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-input[type='text'] {
+input[type='email'] {
     width: 384px;
     height: 50px;
     font-size: 14px;
@@ -64,10 +64,10 @@ input[type='text'] {
     border: none;
     background-color: rgba(66, 63, 63, 0.9);
     border-radius: 3px;
-}
-input[type='text']:focus {
     color: #FFF;
-    opacity: 0.6;
+    opacity: 0.8;
+}
+input[type='email']:focus {
     outline: none;
 }
 .subscribe-btn {
@@ -83,10 +83,10 @@ input[type='text']:focus {
     border: none;
     padding: 0;
     border-radius: 3px;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
 }
 .subscribe-btn:hover {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
     border: 1px solid rgb(94, 89, 89);
 }
