@@ -56,8 +56,8 @@
 .header__shoppingCart{
     flex-grow: 1;
 }
-.header__search:hover i,
-.header__shoppingCart:hover i{
+.header__search:hover a,
+.header__shoppingCart:hover a{
     color: #C7A17A;;
 }
 .header__search:hover,
