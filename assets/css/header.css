@@ -55,6 +55,7 @@
 .header__search,
 .header__shoppingCart{
     flex-grow: 1;
+    margin-left: 20px;
 }
 .header__search:hover a,
 .header__shoppingCart:hover a{

@@ -4,7 +4,7 @@
 }
 #slider__content{
     width: 100%;
-    height: 1140px;
+    height: 1050px;
     background: rgb(15, 15, 15) url(../images/backgrounds/bg_01.png) no-repeat top center;
     display: flex;
     align-items: center;
@@ -14,16 +14,212 @@
 
 .mySlides {
     position: relative;
+    display: flex;
+    align-items: center;
 }
-.mySlides .slide-img{
-    display: block;
+.mySlides img{
+    border-radius: 20px;
+    width: 1585px;
+    height: 807px;
+    animation: imgFaceIn 1.5s ease-in;
 }
+@keyframes imgFaceIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Text content */
 .mySlides .text-content {
     position: absolute;
-    bottom: 0;
+    color: #fff;
+    left: 190px;
+    max-width: 615px;
 }
+.mySlides .text-content h1 {
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    animation: h1FaceIn 2.5s; 
+}
+@keyframes h1FaceIn{ 
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+.mySlides .text-content p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0;
+    animation: pFaceIn 2s ease; 
+}
+@keyframes pFaceIn{ 
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+.text-content__btn {
+    display: flex;
+    height: 54px;
+    align-items: center;
+    margin: 20px 0;
+}
+.text-content__btn .about-btn,
+.text-content__btn .reserve-btn {
+    width: 180px;
+    height: 100%;
+    transition: .4s;
+}
+.text-content__btn .about-btn a,
+.text-content__btn .reserve-btn a {
+    width: 100%;
+    line-height: 54px;
+    font-size: 14px;
+    font-family: 'Roboto', san-serif;
+    color: #fff;
+    font-weight: 600;
+}
+.text-content__btn .about-btn {
+    border: none;
+    background-color: #C7A17A;
+    border-radius: 5px;
+    animation: btnFaceInLeft 2s ease;
+}
+@keyframes btnFaceInLeft {
+    from {
+        opacity: 0;
+        background-color: #fff;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.text-content__btn .reserve-btn {
+    border: 2px solid #fff ;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 35px;
+    animation: btnFaceInRight 2s ease;
+}
+@keyframes btnFaceInRight {
+    from {
+        opacity: 0;
+        background-color: #C7A17A;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.text-content__btn .about-btn:hover,
+.text-content__btn .reserve-btn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* slider__social */
 
 #slider__social {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
+    height: 45px;
+    display: flex;
+    left: 10%;
+}
+#slider__social ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#slider__social ul li {
+    height: 100%;
+    margin-right: 43px;
+}
+#slider__social ul a {
+    display: block;
+    height: 100%;
+    line-height: 45px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Roboto', san-serif;
+    font-weight: 500;
+    transition: .4s;
+}
+#slider__social ul a i {
+    margin-right: 5px;
+    transition: transform .3s ease;
+    display: inline-block;
+
+}
+#slider__social ul li:hover a{
+    color: #C7A17A;
+}
+#slider__social ul li:hover a i{
+    transform: translate3d(0px, -6px, 0px);
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.prev {
+    margin-top: -65px;
+}
+.next {
+    margin-top: -5px;
+}
+.prev i, .next i {
+    transition: .4s;
+}
+.prev:hover i, .next:hover i{
+    color: #C7A17A;
+}
+
+.slider__dots {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 3.5%;
+    margin-top: -46.5px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 8px;
+    background-color: rgb(138, 133, 133);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #ffffff;
 }
