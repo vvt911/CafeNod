@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link font 'Oswald' and 'Roboto'-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +20,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
     <!-- link icon -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <title>CAFENOD</title>
 </head>
+
 <body>
     <!-- Start: Header -->
     <div id="header">
-        <div class="center row">
-            <div class="header__logo center">
-                <a href="#" class="logo center">
-                    <img src="./assets/images/logo/logo-dark.webp" alt="" title="CafeNod">
+        <div class="header-container center row">
+            <div class="header__logo-container center">
+                <a href="#" class="center">
+                    <img src="./assets/images/logo/logo_white_1x.png" id="header__logo" alt="" title="CafeNod">
                 </a>
             </div>
 
@@ -58,20 +66,60 @@
             </div>
         </div>
     </div>
+
+    <div id="header--change">
+        <div class="header-container center row">
+            <div class="header__logo-container center">
+                <a href="#" class="center">
+                    <img src="./assets/images/logo/logo-dark.webp" id="header__logo" alt="" title="CafeNod">
+                </a>
+            </div>
+
+            <div class="header__nav header__nav--change center">
+                <div class="header__nav-container">
+                    <ul class="center">
+                        <li class="row"><a href="#">Home</a></li>
+                        <li class="row"><a href="#">About</a></li>
+                        <li class="row"><a href="#">Our menu</a></li>
+                        <li class="row"><a href="#">Shop</a></li>
+                        <li class="row"><a href="#">Blog</a></li>
+                        <li class="row"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right-container header__right-container--change center">
+                    <div class="header__search">
+                        <a href="#"><i class="ti-search"></i></a>
+                    </div>
+                    <div class="header__shoppingCart">
+                        <a href="#"><i class="ti-shopping-cart"></i></a>
+                    </div>
+                    <div class="header__btn btn">
+                        <a href="#">Reservation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End: Header -->
-    <!-- Hoang tuan da sua -->
+
+
+
     <!-- Start: Content -->
-    
+
 
     <!-- Slider -->
     <div id="slider">
         <div id="slider__content">
             <div class="mySlides">
                 <img src="./assets/images/slider/bg-slider-smark.jpg" alt="">
-                <div class="text-content">
+                <div class="mySlides__text-content">
                     <h1>TIME TO DISCOVER COFFEE HOUSE</h1>
                     <p>
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given
+                        an opportunity to sample.
                     </p>
                     <div class="text-content__btn">
                         <div class="about-btn center">
@@ -85,10 +133,11 @@
             </div>
             <div class="mySlides">
                 <img src="./assets/images/slider/bg-slider-smark2.jpg" alt="">
-                <div class="text-content">
+                <div class="mySlides__text-content">
                     <h1>TIME TO DISCOVER COFFEE HOUSE</h1>
                     <p>
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given
+                        an opportunity to sample.
                     </p>
                     <div class="text-content__btn">
                         <div class="about-btn center">
@@ -102,10 +151,11 @@
             </div>
             <div class="mySlides">
                 <img src="./assets/images/slider/bg-slider-smark4.jpg" alt="">
-                <div class="text-content">
+                <div class="mySlides__text-content">
                     <h1>TIME TO DISCOVER COFFEE HOUSE</h1>
                     <p>
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given
+                        an opportunity to sample.
                     </p>
                     <div class="text-content__btn">
                         <div class="about-btn center">
@@ -150,15 +200,174 @@
         </a>
 
         <div class="slider__dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </div>  
+    </div>
 
 
 
-    
+
+    <!-- Blog -->
+    <!-- LATEST NEWS & BLOG -->
+    <div id="blog">
+        <div class="blog">
+            <p class="blog__subtitle">
+                NEWS & BLOG
+            </p>
+            <p class="blog__title">
+                LATEST NEWS & BLOG
+            </p>
+            <div class="blog__content">
+                <button class="iconPrev icon-direct" onclick="showDivs('prev')">&#10094;</button>
+                <div class="blog__content-box">
+                    <div class="content-box__img">
+                        <img src="./assets/images/blog/img_01.png" alt="Cup">
+                    </div>
+                    <div class="content-box__title">
+                        EXCEPTEUR SINT OCCAECAT CUPIDATAT
+                    </div>
+                    <div class="content-box__description">
+                        Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes
+                        about the admissibility of drinking coffee before or after training.…
+                    </div>
+                    <div class="content-box__more">
+                        <a href="#" class="link">
+                            READ MORE
+                        </a>
+                    </div>
+                    <ul class="content-box__direct">
+
+                        <li class="content-box__direct-category">
+                            <i class="fa-solid fa-file"></i>
+                            Espresso
+                        </li>
+                        <li class="content-box__direct-comments">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__content-box">
+                    <div class="content-box__img">
+                        <img src="./assets/images/blog/img_02.png" alt="Cup">
+                    </div>
+                    <div class="content-box__title">
+                        BIG IS A DOG
+                    </div>
+                    <div class="content-box__description">
+                        Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes
+                        about the admissibility of drinking coffee before or after training.…
+                    </div>
+                    <div class="content-box__more">
+                        <a href="#" class="link">
+                            READ MORE
+                        </a>
+                    </div>
+                    <ul class="content-box__direct">
+
+                        <li class="content-box__direct-category">
+                            <i class="fa-solid fa-file"></i>
+                            Espresso
+                        </li>
+                        <li class="content-box__direct-comments">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__content-box">
+                    <div class="content-box__img">
+                        <img src="./assets/images/blog/img_03.png" alt="Cup">
+                    </div>
+                    <div class="content-box__title">
+                        DOG IS A CAT
+                    </div>
+                    <div class="content-box__description">
+                        Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes
+                        about the admissibility of drinking coffee before or after training.…
+                    </div>
+                    <div class="content-box__more">
+                        <a href="#" class="link">
+                            READ MORE
+                        </a>
+                    </div>
+                    <ul class="content-box__direct">
+
+                        <li class="content-box__direct-category">
+                            <i class="fa-solid fa-file"></i>
+                            Espresso
+                        </li>
+                        <li class="content-box__direct-comments">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__content-box">
+                    <div class="content-box__img">
+                        <img src="./assets/images/blog/img_01.png" alt="Cup">
+                    </div>
+                    <div class="content-box__title">
+                        EXCEPTEUR SINT OCCAECAT CUPIDATAT
+                    </div>
+                    <div class="content-box__description">
+                        Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes
+                        about the admissibility of drinking coffee before or after training.…
+                    </div>
+                    <div class="content-box__more">
+                        <a href="#" class="link">
+                            READ MORE
+                        </a>
+                    </div>
+                    <ul class="content-box__direct">
+
+                        <li class="content-box__direct-category">
+                            <i class="fa-solid fa-file"></i>
+                            Espresso
+                        </li>
+                        <li class="content-box__direct-comments">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog__content-box">
+                    <div class="content-box__img">
+                        <img src="./assets/images/blog/img_03.png" alt="Cup">
+                    </div>
+                    <div class="content-box__title">
+                        DOG IS FOOD
+                    </div>
+                    <div class="content-box__description">
+                        Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes
+                        about the admissibility of drinking coffee before or after training.…
+                    </div>
+                    <div class="content-box__more">
+                        <a href="#" class="link">
+                            READ MORE
+                        </a>
+                    </div>
+                    <ul class="content-box__direct">
+
+                        <li class="content-box__direct-category">
+                            <i class="fa-solid fa-file"></i>
+                            Espresso
+                        </li>
+                        <li class="content-box__direct-comments">
+                            <i class="fa-solid fa-comment"></i>
+                            Comments
+                        </li>
+                    </ul>
+                </div>
+                <button class="iconNext icon-direct" onclick="showDivs('next')">&#10095;</button>
+            </div>
+
+        </div>
+    </div>
+
+
     <!-- End: Content -->
 
 
@@ -167,27 +376,29 @@
     <div class="footer-wrapper">
         <div id="footer">
             <div class="footer-spacer"></div>
-    
+
             <h3 class="footer-heading">
                 <span class="footer-header">COFFEE BUILD YOUR FRESH MIND</span>
             </h3>
-    
+
             <div class="footer-subscribe-wrapper">
                 <form class="widget-wrap">
                     <input type="email" placeholder="Enter your email" class="email" required>
                     <input class="subscribe-btn btn" type="submit" value="Subscribe now">
                 </form>
             </div>
-    
+
             <div class="footer-info">
                 <div class="footer-info-items cafenod">
                     <a href="">
                         <img src="./assets/images/logo/logo_white_1x.png" alt="" class="footer-logo">
                     </a>
                     <p class="info">
-                        Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt aneye.
+                        Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum dolorconsectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt aneye.
                     </p>
-                    
+
                     <div class="footer-icon">
                         <a href="" class="icon footer-facebook">
                             <div class="icon-container">
@@ -221,7 +432,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="footer-info-items contact">
                     <h3 class="info-heading">CONTACT US</h3>
                     <ul>
@@ -251,7 +462,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer-info-items opening-hours">
                     <h3 class="info-heading">OPENING HOURS</h3>
                     <ul>
@@ -285,7 +496,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer-info-items recent-news">
                     <h3 class="info-heading">RECENT NEWS</h3>
                     <div class="list-items">
@@ -325,6 +536,9 @@
     </div>
     <!-- End: Footer -->
 
+    <script src="./assets/js/header.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/blog.js"></script>
 </body>
+
 </html>

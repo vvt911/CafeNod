@@ -3,8 +3,7 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
-}
-
+} 
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -29,3 +28,5 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "flex";  
     dots[slideIndex-1].className += " active";
 }
+
+setInterval(function() {plusSlides(1)}, 7000)
