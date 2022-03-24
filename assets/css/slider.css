@@ -21,9 +21,9 @@
     border-radius: 20px;
     width: 83vw;
     height: 807px;
-    animation: imgFaceIn 1.5s linear;
+    animation: imgFadeIn 1.5s linear;
 }
-@keyframes imgFaceIn {
+@keyframes imgFadeIn {
     from {
         opacity: 0.5;
         transform: translateY(-50px);
@@ -45,9 +45,9 @@
     font-size: 75px;
     font-family: 'Oswald', sans-serif;
     line-height: 1.1;
-    animation: h1FaceIn 2.5s; 
+    animation: h1FadeIn 2.5s; 
 }
-@keyframes h1FaceIn{ 
+@keyframes h1FadeIn{ 
     from {
         opacity: 0;
         transform: translateY(-30px);
@@ -62,9 +62,9 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     padding: 20px 0;
-    animation: pFaceIn 2s ease; 
+    animation: pFadeIn 2s ease; 
 }
-@keyframes pFaceIn{ 
+@keyframes pFadeIn{ 
     from {
         opacity: 0;
         transform: translateX(-40px);
@@ -99,9 +99,9 @@
     border: none;
     background-color: #C7A17A;
     border-radius: 5px;
-    animation: btnFaceInLeft 2s ease;
+    animation: btnFadeInLeft 2s ease;
 }
-@keyframes btnFaceInLeft {
+@keyframes btnFadeInLeft {
     from {
         opacity: 0;
         background-color: #fff;
@@ -117,9 +117,9 @@
     background-color: transparent;
     border-radius: 5px;
     margin-left: 35px;
-    animation: btnFaceInRight 2s ease;
+    animation: btnFadeInRight 2s ease;
 }
-@keyframes btnFaceInRight {
+@keyframes btnFadeInRight {
     from {
         opacity: 0;
         background-color: #C7A17A;
