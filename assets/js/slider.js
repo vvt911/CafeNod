@@ -29,4 +29,4 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-setInterval(function() {plusSlides(1)}, 7000)
+setInterval(function() {plusSlides(1)}, 8000)

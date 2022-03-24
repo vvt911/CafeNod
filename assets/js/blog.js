@@ -1,4 +1,3 @@
-
 let indexStart = 0, indexEnd = 3;
 let listBox = document.getElementsByClassName("blog__content-box");
 let listBoxShow = [];

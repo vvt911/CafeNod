@@ -1,6 +1,6 @@
 #blog {
     width: 100%;
-    height: 1069px;
+    height: 1050px;
     background-image: url(../images/blog/bg-blog-image.webp);
     background-repeat: repeat;
     display: flex;
@@ -19,8 +19,9 @@
 }
 
 .blog__subtitle {
+    font-family: 'Roboto';
     text-align: center;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 14px;
     padding-bottom: 10px;
 }
@@ -28,6 +29,7 @@
 .blog__title {
     text-align: center;
     font-size: 45px;
+    font-weight: 600;
 }
 
 .blog__content {
@@ -44,37 +46,80 @@
 
 .blog__content-box {
     width: 366px;
-    height: 546px;
+    height: 570px;
     display: none;
     flex-direction: column;
     background-color: white;
     margin: 0 10px;
     position: relative;
 }
+.blog__content-box:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.blog__content-box:hover .item-date {
+    display: block;
+}
 
 .content-box__img {
     width: 100%;
-    height: 235px;
+    height: 277px;
+    border: 15px solid transparent;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
 }
-
 .content-box__img img {
     width: 100%;
     height: 100%;
-    padding: 15px;
     box-sizing: border-box;
+    transition: all .3s;
+}
+.content-box__img .item-date {
+    width: 70px;
+    height: 40px;
+    background-color: #12100D;
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    animation: dateFadeIn .3s ease;
+    display: none;
+    
+}
+@keyframes dateFadeIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .content-box__title {
     padding: 15px 22px;
     box-sizing: border-box;
+}
+.content-box__title a {
     font-size: 22px;
+    font-weight: 500;
+    transition: all .3s;
+}
+.content-box__title a:hover {
+    color: #C7A17A;
 }
 
 .content-box__description {
     font-family: oboto, sans-serif;
     padding: 0 22px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 100;
     opacity: 0.6;
@@ -82,7 +127,7 @@
 
 .content-box__more {
     width: calc(100% - 22px*2);
-    height: 30px;
+    height: 40px;
     margin: 0 22px;
     box-sizing: border-box;
     border-bottom: 2px solid rgb(236, 229, 225);
@@ -91,8 +136,10 @@
 }
 
 .link {
-    color: rgb(110, 110, 52);
-
+    padding: 10px 0;
+    color: #C7A17A;
+    font-size: 14px;
+    font-family: 'Roboto';
     box-sizing: border-box;
 }
 
@@ -100,25 +147,25 @@
     display: flex;
     padding: 15px 22px;
     opacity: 0.5;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 20px;
     position: absolute;
     bottom: 0;
 }
 
-.content-box__direct-category {
-    padding-right: 35px;
-}
-
-.content-box__direct-category i {
-    padding: 0 3px;
-}
-
+.content-box__direct-category,
 .content-box__direct-comments {
+    padding-right: 35px;
+    cursor: pointer;
 }
 
+.content-box__direct-category i,
 .content-box__direct-comments i {
+    color: #C7A17A;
     padding: 0 3px;
 }
+
 
 .iconNext {
     position: relative;
@@ -142,7 +189,35 @@
     cursor: pointer;
     font-weight: bold;
 }
-
 .icon-direct:active {
     opacity: 0.6;
+}
+
+.shop__btn,
+.blog__btn {
+    height: 50px;
+    transition: .4s;
+    border: 2px solid #ccc ;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+.shop__btn a,
+.blog__btn a {
+    transition: all 0.3s linear;
+    padding: 0 30px;
+    line-height: 50px;
+}
+.shop__btn:hover,
+.blog__btn:hover {
+    cursor: pointer;
+    background-color: #C7A17A;
+    border: 2px solid #C7A17A;
+}
+.shop__btn:hover a,
+.blog__btn:hover a {
+    color: #fff;
 }
