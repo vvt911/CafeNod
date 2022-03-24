@@ -5,7 +5,7 @@ let headerChange = document.getElementById('header--change')
 
 window.onscroll = function () {
     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        // headerChange.style.display = 'block'
+        headerChange.style.display = 'block'
     } else {
         headerChange.style.display = 'none'
     }
