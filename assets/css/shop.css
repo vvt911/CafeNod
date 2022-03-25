@@ -13,6 +13,7 @@
     font-family: Oswald, sans-serif;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .shop__subtitle {
     font-size: 14px;

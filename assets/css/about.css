@@ -9,14 +9,15 @@
 .box-about {
     width: 100%;
     max-width: 1200px;
-    padding: 15px;
+    padding: 15px 30px;
     background: #fff border-box;
-    margin: 120px 0;
+    margin: 80px 0;
 }
 
 /* about list */
 .about-list {
     display: flex;
+    margin: 0 -15px;
 }
 
 .about-item {
