@@ -142,3 +142,7 @@
 .contact__friday-offer__img {
     text-align: center;
 }
+
+.contact__friday-offer__img img {
+    width: 100%;
+}
