@@ -92,33 +92,49 @@ input[type='email']:focus {
     margin: 15px 0;
     font-family: 'Roboto', sans-serif;
 }
-.cafenod .footer-icon {
-    text-align: center;
-    padding: 15px;
-}
-.cafenod .footer-icon .icon {
-    font-size: 24px;
-    text-decoration: none;
-    padding: 0 9px;
+
+.footer-icon .icon-container {
     display: inline-block;
-}
-.cafenod .footer-icon .ti-icon {
-    color: #C7A17A;
+    width: 35px;
+    height: 35px;
+    background-color: #12100d;
+    color: #c7a17a;
+    overflow: hidden;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    text-decoration: none;
+    align-content: center;
+    animation-delay: 300ms;
 }
 
-/* hover icon */
-.footer-icon .icon-container{
-    width: 24px;
-    height: 36px;
-    overflow: hidden;
+.icon-container + .icon-container {
+    margin-left: 5px;
 }
-.ti-icon {
-    padding: 10px 0 2px 0;
-    display: block;
-    transition: transform .5s ease-in-out;
+
+.box-icon {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms linear 0ms;
 }
-.footer-icon .icon-container:hover .ti-icon {
-    transform: translate3d(0px, -36px, 0px);
+
+.icon-container .box-icon:nth-child(2) {
+    top: 100%;
+    /* opacity: 0; */
+}
+
+.icon-container:hover .box-icon{
+    color: #fff;
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+.icon-container:hover {
+    background-color: #c7a17a;
 }
 
 
