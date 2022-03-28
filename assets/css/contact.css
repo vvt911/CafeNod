@@ -90,6 +90,7 @@
 .contact__reservation__btn:hover {
     background-color: #C7A17A;
     border: 2px solid #C7A17A;
+    cursor: pointer;
 }
 
 
@@ -140,4 +141,8 @@
 }
 .contact__friday-offer__img {
     text-align: center;
+}
+
+.contact__friday-offer__img img {
+    width: 100%;
 }

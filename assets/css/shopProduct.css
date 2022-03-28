@@ -1,0 +1,131 @@
+
+#shoptitle {
+    background-image: url("../images/backgrounds/bg-page-title.webp");
+    height: 500px;
+    position: relative;
+}
+
+.shoptitle__container {
+    height: 100%;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.shop-container__title {
+    font-family: Oswald,sans-serif;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    clear: both;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-top: 235px;
+}
+
+.shop-container__breadcrumb li {
+    display: inline-block;
+}
+
+.shop-container__breadcrumb li a {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+    text-decoration: none;
+    transition: .3s cubic-bezier(.24,.74,.58,1);
+}
+
+.shop-container__breadcrumb li a::after {
+    content: ' / ';
+}
+
+.shop-container__breadcrumb li:last-child a::after {
+    content: none;
+}
+
+.shop-container__breadcrumb li:last-child a {
+    color: #c7a17a;
+    cursor: text;
+}
+
+.shop-container__breadcrumb li:hover a {
+    color: #c7a17a;
+}
+
+.icon-title {
+    position: absolute;
+    bottom: -35px;
+    width: 71px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-title::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
+}
+
+.icon-title img {
+    position: absolute;
+    z-index: 3;
+}
+
+/* Shop product */
+#shop {
+    background-color: #f6f6f6;
+}
+
+.shop-container {
+    padding: 40px auto;
+}
+/* add product */
+.shop-title-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.list-product {
+    color: #333;
+    font-family: Oswald, sans-serif;
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: normal;
+    outline: none;
+    text-decoration: none;
+    flex: 1;
+}
+
+.btn-add-product {
+    text-align: right;
+    transition: all .3s linear;
+}
+
+.btn-add-product a {
+    border-radius: 5px;
+    background-color: #c7a17a;
+    line-height: 50px;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
+.btn-add-product a:hover{
+    background-color: #000;
+    cursor: pointer;
+}
