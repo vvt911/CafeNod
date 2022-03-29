@@ -4,7 +4,6 @@
 }
 #slider__content{
     width: 100%;
-    height: 1050px;
     background: rgb(15, 15, 15) url(../images/backgrounds/bg_01.png) no-repeat top center;
     display: flex;
     align-items: center;
@@ -14,13 +13,15 @@
 
 .mySlides {
     position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 100px 30px 90px 30px;
 }
 .mySlides img{
     border-radius: 20px;
-    width: 83vw;
-    height: 807px;
+    width: 100%;
     animation: imgFadeIn 1.5s linear;
 }
 @keyframes imgFadeIn {
@@ -177,25 +178,29 @@
     transform: translate3d(0px, -6px, 0px);
 }
 
-
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     left: 2.5%;
     width: auto;
-    padding: 10px;
-    color: white;
-    font-size: 40px;
+    /* padding: 10px; */
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #ccc;
+    font-size: 20px;
     transition: 0.6s ease;
     user-select: none;
 }
 .prev {
-    margin-top: -65px;
+    margin-top: -15px;
 }
 .next {
-    margin-top: -5px;
+    margin-top: 25px;
 }
 .prev i, .next i {
     transition: .4s;
