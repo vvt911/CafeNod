@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link font 'Oswald' and 'Roboto'-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>CAFENOD</title>
+</head>
+
+<body>
+    <div id="login">
+        <div class="login-container">
+            <div class="login__logo">
+                <img src="./assets/images/logo/logo-dark.webp" alt="">
+            </div>
+            <p>TIME TO DISCOVER COFFEE HOUSE</p>
+
+            <form action="" class="form-login">
+                <div class="userName-container input-container">
+                    <label for="userName" class="form__label">User name</label>
+                    <input type="text" id="userName" class="form__input" placeholder="Enter your username" required/>
+                </div>
+                <div class="password-container input-container">
+                    <label for="password" class="form__label">Password</label>
+                    <input type="password" id="password" class="form__input" placeholder="Enter your password" required/>
+                </div>
+                <input type="submit" class="login-btn" value="Log In">
+            </form>
+            
+            <div class="login__other">
+                <div class="login__other__or">
+                    <div class="horizontal"></div>
+                    <span>OR</span>
+                    <div class="horizontal"></div>
+                </div>
+
+                <div class="login__other__account">
+                    <div class="other">
+                        <img src="./assets/images/logo/facebook.png" class="facebook" alt="">
+                        <a href="https://www.facebook.com/">Sign in with Facebook</a>
+                    </div>
+                    <div class="other">
+                        <img src="./assets/images/logo/google.png" class="goole" alt="">
+                        <a href="https://myaccount.google.com/">Sign in with Google</a>
+                    </div>
+                </div>
+                <div class="sign-up">
+                    Don't have an account? 
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

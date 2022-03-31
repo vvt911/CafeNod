@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/evaluate.css">
     <link rel="stylesheet" href="./assets/css/shop.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -30,7 +33,7 @@
     <title>CAFENOD</title>
 </head>
 
-<body>
+<div>
     <!-- Start: Header -->
     <div id="header">
         <div class="header-container center row">
@@ -44,11 +47,11 @@
                 <div class="header__nav-container">
                     <ul class="center">
                         <li class="row"><a href="#">Home</a></li>
-                        <li class="row"><a href="#">About</a></li>
-                        <li class="row"><a href="#">Our menu</a></li>
-                        <li class="row"><a href="#">Shop</a></li>
-                        <li class="row"><a href="#">Blog</a></li>
-                        <li class="row"><a href="#">Contact</a></li>
+                        <li class="row"><a href="#about">About</a></li>
+                        <li class="row"><a href="#menu">Our menu</a></li>
+                        <li class="row"><a href="#shop">Shop</a></li>
+                        <li class="row"><a href="#blog">Blog</a></li>
+                        <li class="row"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +65,7 @@
                         <a href="#"><i class="ti-shopping-cart"></i></a>
                     </div>
                     <div class="header__btn btn">
-                        <a href="#">Reservation</a>
+                        <a href="./login.html">Login</a>
                     </div>
                 </div>
             </div>
@@ -81,11 +84,11 @@
                 <div class="header__nav-container">
                     <ul class="center">
                         <li class="row"><a href="#">Home</a></li>
-                        <li class="row"><a href="#">About</a></li>
-                        <li class="row"><a href="#">Our menu</a></li>
-                        <li class="row"><a href="#">Shop</a></li>
-                        <li class="row"><a href="#">Blog</a></li>
-                        <li class="row"><a href="#">Contact</a></li>
+                        <li class="row"><a href="#about">About</a></li>
+                        <li class="row"><a href="#menu">Our menu</a></li>
+                        <li class="row"><a href="#shop">Shop</a></li>
+                        <li class="row"><a href="#blog">Blog</a></li>
+                        <li class="row"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +102,7 @@
                         <a href="#"><i class="ti-shopping-cart"></i></a>
                     </div>
                     <div class="header__btn btn">
-                        <a href="#">Reservation</a>
+                        <a href="./login.html">Login</a>
                     </div>
                 </div>
             </div>
@@ -175,19 +178,19 @@
             <ul>
                 <li>
                     <a href="#">
-                        <i class="ti-facebook"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                         Facebook
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="ti-twitter"></i>
+                        <i class="fa-brands fa-twitter"></i>
                         Twitter
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="ti-youtube"></i>
+                        <i class="fab fa-youtube"></i>
                         Youtube
                     </a>
                 </li>
@@ -195,10 +198,10 @@
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">
-            <i class="ti-arrow-circle-up"></i>
+            <i class="box-btn-slider fas fa-arrow-up"></i>
         </a>
         <a class="next" onclick="plusSlides(1)">
-            <i class="ti-arrow-circle-down"></i>
+            <i class="box-btn-slider fas fa-arrow-down"></i>
         </a>
 
         <div class="slider__dots">
@@ -208,31 +211,409 @@
         </div>
     </div>
 
+    <!-- About -->
+    <div id="about">
+        <div class="box-about">
+            <div class="about-list">
+                <div class="about-item">
+                    <div class="about-item__icon">
+                        <img src="./assets/images/feature/icon_01.png" class="flaticons" alt="">
+                        <div class="line-icon">
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                        </div>
+                        <span class="number-icon"> 3 </span>
+                    </div>
+                    <h3 class="about-item__title">pure grades</h3>
+                    <span class="about-item__step">The coffee is brewed by first roasting the green coffee beans</span>
+                </div>
+                <div class="about-item">
+                    <div class="about-item__icon">
+                        <img src="./assets/images/feature/icon_02.png" class="flaticons" alt="">
+                        <div class="line-icon">
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                        </div>
+                        <span class="number-icon"> 4 </span>
+                    </div>
+                    <h3 class="about-item__title">proper roasting</h3>
+                    <span class="about-item__step">The coffee is brewed by first roasting the green coffee beans</span>
+                </div>
+                <div class="about-item">
+                    <div class="about-item__icon">
+                        <img src="./assets/images/feature/icon_03.png" class="flaticons" alt="">
+                        <div class="line-icon">
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                        </div>
+                        <span class="number-icon"> 1 </span>
+                    </div>
+                    <h3 class="about-item__title">Awesome Aroma</h3>
+                    <span class="about-item__step">The coffee is brewed by first roasting the green coffee beans</span>
+                </div>
+                <div class="about-item">
+                    <div class="about-item__icon">
+                        <img src="./assets/images/feature/icon_04.png" class="flaticons" alt="">
+                        <div class="line-icon">
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                            <span class="dots-line"></span>
+                        </div>
+                        <span class="number-icon"> 3 </span>
+                    </div>
+                    <h3 class="about-item__title">pure grades</h3>
+                    <span class="about-item__step">The coffee is brewed by first roasting the green coffee beans</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-content__box about-content--left">
+                    <div class="about-left__about-us">
+                        <i class="fas fa-coffee"></i>
+                        about us
+                    </div>
+                    <div class="about-left__heading">
+                        <h3 class="about-heading">
+                            <span> There is all about <br> cafenod coffee house </span>
+                        </h3>
+                        <div class="about-heading-description">
+                            From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the
+                            coffeehouse provides patrons with a place to congregate, talk, read, write, entertain one
+                            another, or pass the time.
+                        </div>
+                    </div>
+                    <div class="about-left__textbox">
+                        <h3 class="box-title">
+                            <i class="fa-solid fa-square-check"></i>
+                            There is all about our cafenod coffee shops
+                        </h3>
+                        <div class="box-excerpt">
+                            The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.
+                            Once the beans are roasted each participant is given an opportunity to sample
+                        </div>
+                        <h3 class="box-title">
+                            <i class="fa-solid fa-square-check"></i>
+                            There is all about our cafenod coffee shops
+                        </h3>
+                        <div class="box-excerpt">
+                            The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.
+                            Once the beans are roasted each participant is given an opportunity to sample
+                        </div>
+                    </div>
+
+                    <div class="about-left__footer">
+                        <div class="about-footer__btn">
+                            <div class="about-btn">
+                                <a href="#">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="about-footer__info">
+                            <div class="about-footer-info-image">
+                                <img src="./assets/images/meta/img_01.png" width="62" height="63" alt="">
+                            </div>
+                            <div class="about-footer-info-meta">
+                                <h3 class="info-title">Rasalina De Willamson</h3>
+                                <span class="info-position">Founder & CO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content__box about-content--right">
+                    <div class="item-meta">
+                        <div class="inner-meta">
+                            <div class="item-position">
+                                <label>25</label>
+                                <span>+</span>
+                                year of
+                            </div>
+                            <h3 class="item-title-about">experience</h3>
+                            <img src="./assets/images/about/bg_01.png" width="253" height="232" alt="">
+                        </div>
+                    </div>
+                    <div class="item-image">
+                        <img src="./assets/images/about/img_01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu">
+        <div class="menu-content">
+            <div class="menu-content__heading">
+                <div class="custom-subheading">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    Our special Menu
+                </div>
+                <h3 class="custom-heading">
+                    cafenod coffee house
+                </h3>
+            </div>
+
+            <div class="menu-content__list">
+                <div class="list-item active-item" data-filter="*">
+                    <span class="item-before"></span>
+                    all
+                    <span class="item-after"></span>
+                </div>
+                <div class="list-item" data-filter=".chocolate">
+                    <span class="item-before"></span>
+                    chocolate
+                    <span class="item-after"></span>
+                </div>
+                <div class="list-item" data-filter=".coffee">
+                    <span class="item-before"></span>
+                    coffee
+                    <span class="item-after"></span>
+                </div>
+                <div class="list-item" data-filter=".green-tea">
+                    <span class="item-before"></span>
+                    green tea
+                    <span class="item-after"></span>
+                </div>
+                <div class="list-item" data-filter=".black-tea">
+                    <span class="item-before"></span>
+                    black tea
+                    <span class="item-after"></span>
+                </div>
+            </div>
+
+            <div class="menu-content__list-item">
+                <div class="item-inner chocolate">
+                    <div class="entry-image">
+                        <img src="./assets/images/menu/img_04.png" height="120" width="120" alt="">
+                        <a href="#" class="light-box">+</a>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Bangladeshi green tea</h3>
+                        <p class="item-excerpt">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an</p>
+                    </div>
+
+                    <div class="entry-price">
+                        <div class="inner-price">
+                            <span>$</span>
+                            9.3
+                        </div>
+                    </div>
+                </div>
+                <div class="item-inner coffee">
+                    <div class="entry-image">
+                        <img src="./assets/images/menu/img_01.png" height="120" width="120" alt="">
+                        <a href="#" class="light-box">+</a>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title"> americano Super hot coffee</h3>
+                        <p class="item-excerpt">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an</p>
+                    </div>
+
+                    <div class="entry-price">
+                        <div class="inner-price">
+                            <span>$</span>
+                            4.8
+                        </div>
+                    </div>
+                </div>
+                <div class="item-inner green-tea">
+                    <div class="entry-image">
+                        <img src="./assets/images/menu/img_03.png" height="120" width="120" alt="">
+                        <a href="#" class="light-box">+</a>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">indian pure tea</h3>
+                        <p class="item-excerpt">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an</p>
+                    </div>
+
+                    <div class="entry-price">
+                        <div class="inner-price">
+                            <span>$</span>
+                            1.6
+                        </div>
+                    </div>
+                </div>
+                <div class="item-inner black-tea">
+                    <div class="entry-image">
+                        <img src="./assets/images/menu/img_05.png" height="120" width="120" alt="">
+                        <a href="#" class="light-box">+</a>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Rolatina Sweets cafe house</h3>
+                        <p class="item-excerpt">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an</p>
+                    </div>
+
+                    <div class="entry-price">
+                        <div class="inner-price">
+                            <span>$</span>
+                            0.8
+                        </div>
+                    </div>
+                </div>
+                <div class="item-inner chocolate">
+                    <div class="entry-image">
+                        <img src="./assets/images/menu/img_06.png" height="120" width="120" alt="">
+                        <a href="#" class="light-box">+</a>
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-title">Rolatina Sweets cafe house</h3>
+                        <p class="item-excerpt">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an</p>
+                    </div>
+
+                    <div class="entry-price">
+                        <div class="inner-price">
+                            <span>$</span>
+                            4.8
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Start: Contact -->
     <div id="contact">
-        <div class="contact__bg"></div>
+        <div class="contact__img"></div>
+        <div class="contact__content-container">
+            <div class="contact__content">
+                <div class="contact__content-left">
+                    <p class="contact__subtitle">
+                        <i class="fa-solid fa-mug-saucer" style="color: #C7A17A;"></i>
+                        CLIENT TESTIMONIAL
+                    </p>
+                    <p class="contact__title">DIVINE AROMA IN EVERY SINGLE CUP</p>
+                    <p class="contact__text1">
+                        From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate, talk, read, write, entertain one another, or pass the time,
+                    </p>
+                    <p class="contact__text2">
+                        From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate,
+                    </p>
+                </div>
+                <div class="contact__content-right">
+                    <img src="./assets/images/offer/img_02.png" alt="">
+                </div>
+            </div>
+            
+            <div class="contact__contact">
+                <div class="contact__reservation">
+                    <h3>TABLE RESERVATION. . . .</h3>
+                    <div class="contact__reservation__item">
+                        <div class="reservation__icon center">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                        <div class="phone-number">
+                            <ul>
+                                <li>
+                                    <a href="tel:01869018907"> (008) 01869018907 </a>
+                                </li>
+                                <li>
+                                    <a href="tel:09895432344"> +897 989 543 2344 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <div class="contact-container">
-            <div class="contact__img">
+                    <div class="contact__reservation__item">
+                        <div class="reservation__icon center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <ul>
+                            <li> 
+                                <a href="mailto:info.@webmail.com"> info.@webmail.com </a>
+                            </li>
+                            <li> 
+                                <a href="mailto:israfilsupol@mail.com"> israfilsupol@mail.com </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact__reservation__item">
+                        <div class="reservation__icon center">
+                            <i class="fa-solid fa-fax"></i>
+                        </div>
+                        <ul>
+                            <li> 08744,Sadar pur 8973</li>
+                            <li> 08744,Sadar pur 8974</li></ul>
+                    </div>
+                    <div class="contact__reservation__btn center">
+                        <a href="#">CONTACT US</a>
+                    </div>
+
+                </div>
+                
+                <div class="contact__opening-hours">
+                    <h3>OPENING HOURS. . . .</h3>
+                    <ul>
+                        <li>
+                            <label for="" class="opening-day">Saturday</label>
+                            <span class="opening-hours">9:00 - 18:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Sunday</label>
+                            <span class="opening-hours">10:00 - 18:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Monday</label>
+                            <span class="opening-hours">11:00 - 19:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Tuesday</label>
+                            <span class="opening-hours">12:00 - 19:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Wednesday</label>
+                            <span class="opening-hours">12:00 - 20:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Thursday</label>
+                            <span class="opening-hours">13:00 - 18:00</span>
+                        </li>
+                        <li>
+                            <label for="" class="opening-day">Friday</label>
+                            <span class="opening-close">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__friday-offer">
+                    <h3>FRIDAY OFFER. . . .</h3>
+                    <div class="contact__friday-offer__img">
+                        <img src="./assets/images/offer/img_03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Contact -->
+
+    <!-- Start: evaluate -->
+    <div id="evaluate">
+        <div class="evaluate__bg"></div>
+
+        <div class="evaluate-container">
+            <div class="evaluate__img">
                 <img src="./assets/images/testimonial/img_01.png" alt="">
             </div>
-            <div class="contact__content">
-                <p class="contact__subtitle">
+            <div class="evaluate__content">
+                <p class="evaluate__subtitle">
                     <i class="fa-solid fa-mug-saucer" style="color: #C7A17A;"></i>
                     CLIENT TESTIMONIAL
                 </p>
-                <p class="contact__title">OUR CLIENT SAY SOMETHING ABOUT CAFENOD</p>
-                <p class="contact__text">
+                <p class="evaluate__title">OUR CLIENT SAY SOMETHING ABOUT CAFENOD</p>
+                <p class="evaluate__text">
                     Been to this stunning place many times over the last years. Tonight I have to say, it was good as it ever was. Superb food, exceedingly good staff. Lovely atmosphere staff were excellent, very attentive and polite. We felt taken care of! Food came quickly and was hot and delicious.
                 </p>
                 <hr>
-                <div class="contact__rate">
-                    <div class="contact__rate__info">
-                        <p class="contact__rate__name">RASALINA DE WILLAMSON</p>
-                        <p class="contact__rate__position">FOUNDER & CO</p>
+                <div class="evaluate__rate">
+                    <div class="evaluate__rate__info">
+                        <p class="evaluate__rate__name">RASALINA DE WILLAMSON</p>
+                        <p class="evaluate__rate__position">FOUNDER & CO</p>
                     </div>
-                    <div class="contact__rate__star">
+                    <div class="evaluate__rate__star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -241,22 +622,22 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="contact__img-small small-1 center">
-                <img src="./assets/images/testimonial/thumbnail_01.png" alt="">
-            </div>
-            <div class="contact__img-small small-2 center">
-                <img src="./assets/images/testimonial/thumbnail_02.png" alt="">
-            </div>
-            <div class="contact__img-small small-3 center">
-                <img src="./assets/images/testimonial/thumbnail_03.png" alt="">
-            </div>
-            <div class="contact__img-small small-4 center">
-                <img src="./assets/images/testimonial/thumbnail_04.png" alt="">
-            </div>
+        <div class="evaluate__img-small small-1 center">
+            <img src="./assets/images/testimonial/thumbnail_01.png" alt="">
+        </div>
+        <div class="evaluate__img-small small-2 center">
+            <img src="./assets/images/testimonial/thumbnail_02.png" alt="">
+        </div>
+        <div class="evaluate__img-small small-3 center">
+            <img src="./assets/images/testimonial/thumbnail_03.png" alt="">
+        </div>
+        <div class="evaluate__img-small small-4 center">
+            <img src="./assets/images/testimonial/thumbnail_04.png" alt="">
         </div>
     </div>
-    <!-- End: Contact -->
+    <!-- End: evaluate -->
 
     <!-- Start: Shop -->
     <div id="shop">
@@ -268,7 +649,7 @@
             <div class="shop__title-container">
                 <p class="shop__title">OUR POPULAR PRODUCT</p>
                 <div class="shop__btn center">
-                    <a href="#">SEE ALL PRODUCT</a>
+                    <a href="./shop.html">SEE ALL PRODUCT</a>
                 </div>
             </div>
 
@@ -550,7 +931,6 @@
     <!-- End: Content -->
 
 
-
     <!-- Start: Footer -->
     <div class="footer-wrapper">
         <div id="footer">
@@ -579,34 +959,44 @@
                     </p>
 
                     <div class="footer-icon">
-                        <a href="" class="icon footer-facebook">
-                            <div class="icon-container">
-                                <i class="ti-icon ti-facebook"></i>
-                                <i class="ti-icon ti-facebook"></i>
+                        <a class="icon-container" href="#">
+                            <div class="box-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </div>
                         </a>
-                        <a href="" class="icon footer-twitter">
-                            <div class="icon-container">
-                                <i class="ti-icon ti-twitter"></i>
-                                <i class="ti-icon ti-twitter"></i>
+                        <a class="icon-container" href="#">
+                            <div class="box-icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-brands fa-twitter"></i>
                             </div>
                         </a>
-                        <a href="" class="icon footer-instagram">
-                            <div class="icon-container">
-                                <i class="ti-icon ti-instagram"></i>
-                                <i class="ti-icon ti-instagram"></i>
+                        <a class="icon-container" href="#">
+                            <div class="box-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-brands fa-instagram"></i>
                             </div>
                         </a>
-                        <a href="" class="icon footer-camera">
-                            <div class="icon-container">
-                                <i class="ti-icon ti-video-camera"></i>
-                                <i class="ti-icon ti-video-camera"></i>
+                        <a class="icon-container" href="#">
+                            <div class="box-icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-solid fa-video"></i>
                             </div>
                         </a>
-                        <a href="" class="icon footer-bag">
-                            <div class="icon-container">
-                                <i class="ti-icon ti-bag"></i>
-                                <i class="ti-icon ti-bag"></i>
+                        <a class="icon-container" href="#">
+                            <div class="box-icon">
+                                <i class="fa-brands fa-behance"></i>
+                            </div>
+                            <div class="box-icon">
+                                <i class="fa-brands fa-behance"></i>
                             </div>
                         </a>
                     </div>
@@ -714,10 +1104,15 @@
         </div>
     </div>
     <!-- End: Footer -->
+    <!-- Back to top -->
+    <div id="btn-back-to-top" title="Back To Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
 
-    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
