@@ -13,8 +13,8 @@ a {
     justify-content: center;
 }
 .login-container {
-    width: 30%;
-    height: 700px;
+    width: 25%;
+    /* height: ; */
     background-color: #fff;
     border-radius: 7px;
     margin: 15px;
