@@ -5,14 +5,14 @@ body {
 a {
     text-decoration: none;
 }
-#login {
+#register {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.login-container {
+.register-container {
     width: 700px;
     max-width: calc(100% - 32px);
     min-height: 200px;
@@ -36,21 +36,21 @@ a {
     }
 }
 
-.login__logo {
+.register__logo {
     width: 100%;
     /* height: 100px; */
     text-align: center;
 }
-.login__logo img{
+.register__logo img{
     width: 70%;;
 }
 p {
     margin: 15px 0;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Roboto';
-    opacity: 0.6;
+    opacity: 0.8;
 }
-.form-login {
+.form-register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +84,7 @@ p {
     outline: none;
 }
 
-.login-btn {
+.register-btn {
     width: 100%;
     height: 40px;
     margin: 20px 0;
@@ -97,33 +97,33 @@ p {
     border-radius: 3px;
     cursor: pointer;
 }
-.login-btn:hover {
+.register-btn:hover {
     background-color: black;
 }
 
-.login__other {
+.register__other {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.login__other__or {
+.register__other__or {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.login__other__or span {
+.register__other__or span {
     font-size: 15px;
     font-family: 'Roboto';
     padding: 0 10px;
 }
-.login__other__or .horizontal {
+.register__other__or .horizontal {
     flex-grow: 1;
     height: 1px;
     background-color: #ccc;
     line-height: 18px;
 }
 
-.login__other__account {
+.register__other__account {
     display: flex;
     margin-bottom: 20px;
     justify-content: space-between;

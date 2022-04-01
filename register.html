@@ -11,19 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
     <title>CAFENOD</title>
 </head>
 
 <body>
-    <div id="login">
-        <div class="login-container">
-            <div class="login__logo">
+    <div id="register">
+        <div class="register-container">
+            <div class="register__logo">
                 <img src="./assets/images/logo/logo-dark.webp" alt="">
             </div>
-            <p>TIME TO DISCOVER COFFEE HOUSE</p>
+            <p>Create an account</p>
 
-            <form action="" class="form-login">
+            <form action="" class="form-register">
                 <div class="userName-container input-container">
                     <label for="userName" class="form__label">User name</label>
                     <input type="text" id="userName" class="form__input" placeholder="Enter your username" required/>
@@ -32,33 +32,45 @@
                     <label for="password" class="form__label">Password</label>
                     <input type="password" id="password" class="form__input" placeholder="Enter your password" required/>
                 </div>
-                <input type="submit" class="login-btn" value="Log In">
+                <input type="submit" class="register-btn" value="Register">
             </form>
             
-            <div class="login__other">
-                <div class="login__other__or">
+            <div class="register__other">
+                <div class="register__other__or">
                     <div class="horizontal"></div>
                     <span>OR</span>
                     <div class="horizontal"></div>
                 </div>
 
-                <div class="login__other__account">
+                <div class="register__other__account">
                     <div class="other">
                         <img src="./assets/images/logo/facebook.png" class="facebook" alt="">
-                        <a href="https://www.facebook.com/">Sign in with Facebook</a>
+                        <a href="https://www.facebook.com/">Sign up with Facebook</a>
                     </div>
                     <div class="other">
                         <img src="./assets/images/logo/google.png" class="goole" alt="">
-                        <a href="https://myaccount.google.com/">Sign in with Google</a>
+                        <a href="https://myaccount.google.com/">Sign up with Google</a>
                     </div>
                 </div>
                 <div class="sign-up">
-                    Don't have an account? 
-                    <a href="./register.html">Sign Up</a>
+                    You have an account?
+                    <a href="/login.html">Sign In</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        let registerBtn = document.querySelector('.register-btn')
+        let userName = document.getElementById('userName')
+        let password = document.getElementById('password')
+        registerBtn.onclick = function () {
+            if (userName.value == '' && password.value == '')
+                alert('Please enter username and password!')
+            else
+                confirm('Sign up success!')
+        }
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,6 @@ let listBox = document.getElementsByClassName("blog__content-box");
 let listBoxShow = [];
 let maxIndex = listBox.length;
 
-
 handleHiddenBoxes = (listHidden) => {
     listHidden.map((item) => {
         item.style.display = "none";
@@ -23,7 +22,6 @@ handleShowBoxes = () => {
     })
 }
 handleShowBoxes();
-
 
 function showDivs(type) {
     switch (type) {
