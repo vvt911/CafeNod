@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/shop.css">
     <link rel="stylesheet" href="./assets/css/shopProduct.css">
+    <link rel="stylesheet" href="./assets/css/addProduct.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
     <!-- link icon -->
@@ -65,43 +66,6 @@
             </div>
         </div>
     </div>
-
-    <div id="header--change">
-        <div class="header-container center row">
-            <div class="header__logo-container center">
-                <a href="./index.html#" class="center">
-                    <img src="./assets/images/logo/logo-dark.webp" id="header__logo" alt="" title="CafeNod">
-                </a>
-            </div>
-
-            <div class="header__nav header__nav--change center">
-                <div class="header__nav-container">
-                    <ul class="center">
-                        <li class="row"><a href="./index.html#home">Home</a></li>
-                        <li class="row"><a href="./index.html#about">About</a></li>
-                        <li class="row"><a href="./index.html#menu">Our menu</a></li>
-                        <li class="row"><a href="./index.html#shop">Shop</a></li>
-                        <li class="row"><a href="./index.html#blog">Blog</a></li>
-                        <li class="row"><a href="./index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="header__right">
-                <div class="header__right-container header__right-container--change center">
-                    <div class="header__search">
-                        <a href="#"><i class="ti-search"></i></a>
-                    </div>
-                    <div class="header__shoppingCart">
-                        <a href="#"><i class="ti-shopping-cart"></i></a>
-                    </div>
-                    <div class="header__btn btn">
-                        <a href="#">Reservation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- End: Header -->
 
     <!-- Shop title -->
@@ -126,7 +90,7 @@
         <div class="shop-title-container shoptitle__container">
             <h3 class="list-product">List product</h3>
             <div class="btn-add-product">
-                <a href="#">Add products</a>
+                <a href="#add-product">Add products</a>
             </div>
         </div>
         <div class="shop-container">
@@ -237,7 +201,49 @@
     </div>
     <!-- End: Shop -->
 
-
+    <div id="add-product-container" class="center">
+        <div id="add-product">
+            <form action="" class="add-product">
+                <h3 class="form__title">PRODUCT INFOMATION</h3>
+                <div class="form__productInfo">
+                    <div class="form__input-container">
+                        <p>Product's name</p>
+                        <div>
+                            <input type="text" placeholder="Enter product name" id="productInfo__name" class="form__input"/>
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                    </div>
+                    <div class="form__input-container">
+                        <p>Product's image</p>
+                        <input type="file" id="productInfo__img"/>
+                        <div>
+                            <label for="productInfo__img" class="form__input">
+                                <span>Choose image</span>
+                            </label>
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="form__input-container">
+                        <p>Price</p>
+                        <div>
+                            <input type="text" placeholder="Enter price" id="productInfo__price" class="form__input" />
+                            <i class="fa-solid fa-sterling-sign"></i>
+                        </div>
+                    </div>
+                    <div class="form__input-container">
+                        <p>Description</p>
+                        <div>
+                            <input type="text" placeholder="Description" id="productInfo__description" class="form__input" />
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <button type="submit" class="add-product__btn">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- Start: Footer -->
     <div class="footer-wrapper">
         <div id="footer">
@@ -415,7 +421,7 @@
     <div id="btn-back-to-top" title="Back To Top">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
-    
     <script src="./assets/js/scroll.js"></script>
+
 </body>
 </html>
