@@ -86,7 +86,7 @@
     right: 0;
     left: 0;
     background-color: #fff;
-    z-index: 1000;
+    z-index: 50;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     animation: headerFaceIn 0.5s linear;
