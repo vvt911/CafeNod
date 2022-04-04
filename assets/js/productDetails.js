@@ -1,15 +1,15 @@
-// lấy dữ liệu từ localStorage
-let productsInfo = JSON.parse(window.localStorage.getItem('products'))
-
-// Lấy ra list tên các sản phẩm
-let productsName = document.querySelectorAll('.product__name')
-
 // vùng chứa chi tiết sản phẩm
 let productDetails = document.getElementById('product-details-container')
 
-function seeProductDetails () {
+function seeProductDetails() {
+    // lấy dữ liệu từ localStorage
+    let productsInfo = JSON.parse(window.localStorage.getItem('products'))
+
+    // Lấy ra list tên các sản phẩm
+    let productsName = document.querySelectorAll('.product__name')
+
     for (let i in productsName) {
-        productsName[i].onclick = function() {
+        productsName[i].onclick = function () {
             productDetails.style.display = 'flex'
             productDetails.innerHTML = `
             <div id="product-details">
@@ -97,4 +97,4 @@ function seeProductDetails () {
         }
     }
 }
-seeProductDetails ()
+seeProductDetails()

@@ -8,7 +8,7 @@ let productPrice = document.getElementById('productInfo__price')
 let productDescription = document.getElementById('productInfo__description')
 
 // button add
-let submitAddProduct = document.querySelector('.add-product__btn')
+let addProductBtn = document.querySelector('.add-product__btn')
 
 // lấy src ảnh từ thẻ input[type='file']
 let imgSrc
@@ -30,7 +30,7 @@ productImg.onchange = function(event) {
 }
 
 // xử lý thêm sản phẩm
-submitAddProduct.onclick = function() {
+addProductBtn.onclick = function() {
     if (!productName.value) {
         alert("Please enter product's name")
     } else if (!imgSrc) {
@@ -74,8 +74,8 @@ submitAddProduct.onclick = function() {
         })
         window.localStorage.setItem('products', JSON.stringify(data));
         productsInfo = JSON.parse(window.localStorage.getItem('products'))
-        productsName = document.querySelectorAll('.product__name')
-        seeProductDetails ()
+        editProductInfo()
+        seeProductDetails()
 
 
         // reset giá trị tại form
