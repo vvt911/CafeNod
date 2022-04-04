@@ -76,11 +76,13 @@ addProductBtn.onclick = function() {
         productsInfo = JSON.parse(window.localStorage.getItem('products'))
         editProductInfo()
         seeProductDetails()
+        removeProductInfo()
 
 
         // reset giá trị tại form
         productName.value = ''
         fileName.innerHTML = 'Choose image'
+        imgSrc = ''
         productPrice.value = ''
         productDescription.value = ''
     }
