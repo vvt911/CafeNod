@@ -376,6 +376,7 @@
                 </div>
                 <div class="center">
                     <button type="button" class="add-product__btn">Add</button>
+                    <button type="button" style="display: none;" class="update-product__btn">Update</button>
                 </div>
             </form>
         </div>
@@ -581,11 +582,19 @@
 
     <!-- Show form add product -->
     <script>
-        let addProductBtn = document.querySelector('.btn-add-product')
+        let addProductsBtn = document.querySelector('.btn-add-product')
         let formAddProduct = document.querySelector('#add-product-container')
 
-        addProductBtn.onclick = function () {
+        addProductsBtn.onclick = function () {
             formAddProduct.style.display = 'flex';
+            addProductBtn.style.display = 'block'
+            updateProductBtn.style.display = 'none'
+
+            // reset giá trị tại form
+            productName.value = ''
+            fileName.innerHTML = 'Choose image'
+            productPrice.value = ''
+            productDescription.value = ''
         }
     </script>
 
@@ -594,7 +603,8 @@
     <script src="./assets/js/shoppingCart.js"></script>
     <script src="./assets/js/addProduct.js"></script>
     <script src="./assets/js/productDetails.js"></script>
-    <script src="./assets/js/editProducts.js"></script>
+    <script src="./assets/js/editProduct.js"></script>
+    <script src="./assets/js/removeProduct.js"></script>
 </body>
 
 </html>
