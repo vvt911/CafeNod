@@ -1,9 +1,9 @@
 // When the user scrolls down 500px from the top of the document => change position header
 // When the user scrolls down 1000px from the top of the document => display block for button scroll top
 const header = document.getElementById('header');
-const headerNav = document.getElementsByClassName('header__nav')
-const headerRight = document.getElementsByClassName('header__right-container')
-const headerLogo = document.getElementById('header__logo')
+const headerNav = document.getElementsByClassName('header__nav');
+const headerRight = document.getElementsByClassName('header__right-container');
+const headerLogo = document.getElementById('header__logo');
 const btnScrollTop = document.getElementById("btn-back-to-top");
 
 window.onscroll = function () {
@@ -12,7 +12,8 @@ window.onscroll = function () {
         headerNav[0].classList.add('header__nav--change')
         headerRight[0].classList.add('header__right-container--change')
         headerLogo.src = './assets/images/logo/logo-dark.webp'
-
+        headerNavContainer.style.display = "none";
+        showNavResponsive = false;
     } else {
         header.id = 'header'
         headerNav[0].classList.remove('header__nav--change')

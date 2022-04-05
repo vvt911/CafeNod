@@ -1,11 +1,10 @@
 #header {
     position: absolute;
-    top: 16px;
-    right: 0;
-    left: 0;
-    background-color: transparent;
-    z-index: 3;
+    top: 25px;
     width: 100%;
+    background-color: transparent;
+    z-index: 50;
+    height: 100px;
 }
 
 .header-container {
@@ -13,33 +12,32 @@
     margin-left: auto;
     margin-right: auto;
 }
-.header__logo-container a img{
-    width: 201px;
-    margin-left: 16px;
-}
 
 .header__nav {
     flex: 1;
-    height: 80px;
-    margin: 0 15px;
+    height: 100%;
 }
+
 .header__nav-container {
     height: 100%;
-    padding-left: 40px;
 }
+
 .header__nav-container ul {
     height: 100%;
 }
-.header__nav li a {
+
+.nav-item a{
     display: block;
-    line-height: 80px;
+    line-height: 100px;
     font-size: 14px;
     letter-spacing: 0.05em;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
     transition: .4s;
 }
-.header__nav li:hover a {
+.nav-item:hover a {
     color: #C7A17A;
 }
 
@@ -62,35 +60,69 @@
 }
 .header__search:hover a,
 .header__shoppingCart:hover a{
-    color: #C7A17A;;
+    color: #C7A17A;
 }
 .header__search:hover,
 .header__shoppingCart:hover{
     cursor: pointer;
 }
-.header__btn {
-    flex-grow: 5;
-    margin-left: 50px;
-    margin-right: 16px;
-}
-.header__btn a {
-    font-family: 'Roboto';
-    color: #fff;
-    font-size: 15px;
+
+.header-btn {
+    min-width: 155px;
+    height: 51px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
+.header-btn:hover a{
+    background-color: #fff;
+    color: #12100d;
+}
+
+.header-btn a{
+    display: block;
+    line-height: 51px;
+    padding: 0 30px;
+    min-width: 155px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #C7A17A;
+}
+
+.header-icon + .header-icon {
+    margin-right: 30px;
+}
+
+.header-btn-menu {
+    color: #000;
+    font-style: 16px;
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .6;
+    display: none;
+}
+
+.header-btn-menu:hover {
+    opacity: 1;
+}
 
 #header--change {
     position: fixed;
+    height: 100px;
     top: 0;
     right: 0;
     left: 0;
     background-color: #fff;
     z-index: 50;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     animation: headerFaceIn 0.5s linear;
 }
+
 @keyframes headerFaceIn {
     from {
         transform: translateY(-80px);
@@ -99,6 +131,7 @@
         transform: translateY(0);
     }
 }
+
 .header__nav--change li a,
 .header__right-container--change a i {
     color: #000;
