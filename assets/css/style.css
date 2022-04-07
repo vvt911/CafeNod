@@ -29,7 +29,6 @@ li {
 .row {
     flex-direction: row;
     height: 100%;
-    margin: 0 10px;
 }
 
 .btn {

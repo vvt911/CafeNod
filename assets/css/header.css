@@ -26,6 +26,10 @@
     height: 100%;
 }
 
+.nav-item + .nav-item {
+    margin-left: 10px;
+}
+
 .nav-item a{
     display: block;
     line-height: 100px;

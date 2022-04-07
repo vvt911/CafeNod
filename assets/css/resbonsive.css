@@ -29,15 +29,20 @@
         transition: all .3s linear;
     }
     
-    .header__nav-container ul {
+    .navbar {
         margin: 0;
         padding: 0;
+        flex-direction: column;
     }
 
     .nav-item {
         height: 60px;
         width: 100%;
         text-align: left;
+    }
+
+    .nav-item + .nav-item {
+        margin-left: 0;
     }
     
     .nav-item a {
@@ -62,6 +67,8 @@
         display: block;
     }
 }
+
+/* Slider */
 
 @media (min-width: 992px) {
 

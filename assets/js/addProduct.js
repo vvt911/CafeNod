@@ -1,6 +1,5 @@
 let listProducts = document.querySelector('.shop__products')
 let fileName = document.querySelector('.form__input span')
-
 // lấy thông tin từ form thêm sản phẩm
 let productName = document.getElementById('productInfo__name')
 let productImg = document.getElementById('productInfo__img')
@@ -28,6 +27,32 @@ productImg.onchange = function(event) {
     const {files} = event.target;
     fileName.innerText = files[0].name
 }
+// Load sản phẩm
+data.forEach(e => {
+    let child = document.createElement('div')
+    child.classList.add('product-container')
+    child.innerHTML = `<div class="product">
+                            <div class="product__img">
+                                <img src="${e.imgUrl}" alt="Product">
+                                <div class="product__remove center">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="product__edit center">
+                                    <i class="fa-solid fa-pen"></i>
+                                </div>
+                            </div>
+                            <a href="#product-details-container" class="product__name">${e.name}</a>
+                            <div class="product__more">
+                                <div class="product__price">
+                                    ${e.price}
+                                </div>
+                                <div class="product__select-btn center">
+                                    <a href="#">SELECT OPTIONS</a>
+                                </div>
+                            </div>
+                        </div>`
+    listProducts.appendChild(child)
+});
 
 // xử lý thêm sản phẩm
 addProductBtn.onclick = function() {
@@ -63,7 +88,6 @@ addProductBtn.onclick = function() {
                                 </div>
                             </div>`
         listProducts.appendChild(child)
-        
         // thêm vào localStorage và gán lại các biến productsInfo, productsName để xem chi tiết sản phẩm
         data.push({
             id: data.length + 1,
@@ -77,7 +101,6 @@ addProductBtn.onclick = function() {
         editProductInfo()
         seeProductDetails()
         removeProductInfo()
-
 
         // reset giá trị tại form
         productName.value = ''
