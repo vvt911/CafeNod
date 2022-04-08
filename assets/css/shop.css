@@ -63,6 +63,10 @@
     background-color: #f5f4ef;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
 }
 .product__img img{
     width: 100%;
@@ -118,4 +122,28 @@
 }
 .product__select-btn:hover a {
     color: #fff;
+}
+
+
+.product__remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.product__edit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.product__edit:hover i,
+.product__remove:hover i {
+    opacity: 0.6;
 }
