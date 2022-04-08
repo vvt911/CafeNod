@@ -15,8 +15,7 @@ function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
-            imgSrc = e.target.result
-            // console.log(e.target);
+            imgSrc = e.target.result;
         };
         reader.readAsDataURL(input.files[0]);
     }
@@ -90,7 +89,7 @@ addProductBtn.onclick = function() {
         listProducts.appendChild(child)
         // thêm vào localStorage và gán lại các biến productsInfo, productsName để xem chi tiết sản phẩm
         data.push({
-            id: data.length + 1,
+            id: (data.length == 0) ? 1 : data[data.length - 1].id + 1,
             name: productName.value,
             imgUrl: imgSrc,
             price: productPrice.value,
@@ -110,5 +109,3 @@ addProductBtn.onclick = function() {
         productDescription.value = ''
     }
 }
-
-
