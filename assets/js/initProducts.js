@@ -1,4 +1,4 @@
-// // khởi tạo giá trị mặc định cho localStorage
+// khởi tạo giá trị mặc định cho localStorage
 // let data = [
 //     {
 //         id: 1,

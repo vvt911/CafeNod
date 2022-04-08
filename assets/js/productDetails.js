@@ -32,7 +32,7 @@ function seeProductDetails() {
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="product-details__count-rating">
-                            1 reviews
+                            0 reviews
                         </div>
                     </div>
 
