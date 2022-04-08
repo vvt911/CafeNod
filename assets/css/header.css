@@ -74,14 +74,14 @@
 .header-btn {
     min-width: 155px;
     height: 51px;
+    font-family: Roboto, sans-serif;
     text-align: center;
     overflow: hidden;
     border-radius: 5px;
 }
 
 .header-btn:hover a{
-    background-color: #fff;
-    color: #12100d;
+    background-color: #000;
 }
 
 .header-btn a{

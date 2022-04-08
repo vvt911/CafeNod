@@ -5,6 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: Roboto, sans-serif;
 }
 
 body {
@@ -73,4 +74,8 @@ li {
 #btn-back-to-top:hover {
     cursor: pointer;
     background-color: #000;
+}
+
+.admin {
+    display: block;
 }

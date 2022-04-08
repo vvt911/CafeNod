@@ -44,5 +44,8 @@
 //     }
 // ]
 
-// window.localStorage.setItem('products', JSON.stringify(data));
-let data = JSON.parse(window.localStorage.products);
+if (!window.localStorage.products) {
+    window.localStorage.setItem('products', JSON.stringify([]));
+}
+
+let data = JSON.parse(window.localStorage.products)
