@@ -99,89 +99,6 @@
 
     <!-- Start: Product details -->
     <div id="product-details-container" class="center">
-        <!-- <div id="product-details">
-            <div class="product-details__img-container">
-                <div class="product-details__img">
-                    <img src="./assets/images/shop/product-1-600x503.png" alt="">
-                </div>
-            </div>
-
-            <div class="product-details__info">
-                <div class="product-details__name">
-                    <h3>NICARAGUA TRADITIONAL</h3>
-                </div>
-                <div class="product-details__rating">
-                    <div class="product-details__star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="product-details__count-rating">
-                        1 reviews
-                    </div>
-                </div>
-
-                <p class="product-details__description">
-                    The coffee is brewed by first roasting the green coffee beans over hot coals in brazier.Once the
-                    beans are roasted each participant is given an opportunity to sample The coffee is brewed by first
-                    roasting the green coffee beans over hot coals in a brazier.
-                </p>
-
-                <p class="product-details__price">
-                    £22 – £23
-                </p>
-
-                <div class="product-details__color">
-                    <p>Color</p>
-                    <ul>
-                        <li>BROWN</li>
-                        <li>DUSKY</li>
-                        <li>YELLOW</li>
-                    </ul>
-                </div>
-
-                <div class="product-details__btn-container">
-                    <button class="product-details__btn" type="button">ADD TO CART</button>
-                </div>
-
-                <div class="product-details__wishlist">
-                    <i class="fa-solid fa-heart"></i>
-                    ADD TO WISHLIST
-                </div>
-
-                <div class="product-details__share">
-                    <p>
-                        <i class="fa-solid fa-share"></i>
-                        Share
-                    </p>
-                    <div class="share__icons">
-                        <a href="#">
-                            <div>
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div>
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div>
-                                <i class="fa-brands fa-google-plus-g"></i>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div>
-                                <i class="fa-brands fa-pinterest-p"></i>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     <!-- End: Product details -->
 
@@ -199,6 +116,7 @@
     </div>
     <!-- End: Shop -->
 
+    <!-- Form add product -->
     <div id="add-product-container" class="center">
         <div id="add-product">
             <form action="" class="add-product">
@@ -216,7 +134,7 @@
                         <p>Product's image</p>
                         <input type="file" accept="image/*" id="productInfo__img" required />
                         <div>
-                            <label for="productInfo__img" class="form__input">
+                            <label for="productInfo__img" class="form__input form__input__choose-image">
                                 <span>Choose image</span>
                             </label>
                             <i class="fa-solid fa-image"></i>
@@ -231,14 +149,37 @@
                         </div>
                     </div>
                     <div class="form__input-container">
-                        <p>Description</p>
-                        <div>
-                            <input type="text" placeholder="Description" id="productInfo__description"
-                                class="form__input" required />
-                            <i class="fa-solid fa-comment"></i>
+                        <p>Color</p>
+                        <div class="form__input form__input__colors">
+                            <input type="checkbox" id="brown" class="form__input__color">
+                            <label for="brown" class="colors__label">
+                                BROWN
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                            
+                            <input type="checkbox" id="dusky" class="form__input__color">
+                            <label for="dusky" class="colors__label">
+                                DUSKY
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+
+                            <input type="checkbox" id="black" class="form__input__color">
+                            <label for="black" class="colors__label">
+                                BLACK
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                            <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
                 </div>
+
+                <div class="form__productDes">
+                    <p>Description</p>
+                    <div>
+                        <textarea placeholder="Description" id="productInfo__description"></textarea>
+                    </div>
+                </div>
+            
                 <div class="center">
                     <button type="button" class="add-product__btn">Add</button>
                     <button type="button" style="display: none;" class="update-product__btn">Update</button>
@@ -470,6 +411,7 @@
     <script src="./assets/js/productDetails.js"></script>
     <script src="./assets/js/editProduct.js"></script>
     <script src="./assets/js/removeProduct.js"></script>
+    <script src="./assets/js/selectProductColor.js"></script>
     <script src="./assets/js/responsive.js"></script>
 </body>
 
