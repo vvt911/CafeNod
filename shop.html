@@ -116,6 +116,7 @@
     </div>
     <!-- End: Shop -->
 
+    <!-- Form add product -->
     <div id="add-product-container" class="center">
         <div id="add-product">
             <form action="" class="add-product">
@@ -133,7 +134,7 @@
                         <p>Product's image</p>
                         <input type="file" accept="image/*" id="productInfo__img" required />
                         <div>
-                            <label for="productInfo__img" class="form__input">
+                            <label for="productInfo__img" class="form__input form__input__choose-image">
                                 <span>Choose image</span>
                             </label>
                             <i class="fa-solid fa-image"></i>
@@ -148,14 +149,37 @@
                         </div>
                     </div>
                     <div class="form__input-container">
-                        <p>Description</p>
-                        <div>
-                            <input type="text" placeholder="Description" id="productInfo__description"
-                                class="form__input" required />
-                            <i class="fa-solid fa-comment"></i>
+                        <p>Color</p>
+                        <div class="form__input form__input__colors">
+                            <input type="checkbox" id="brown" class="form__input__color">
+                            <label for="brown" class="colors__label">
+                                BROWN
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                            
+                            <input type="checkbox" id="dusky" class="form__input__color">
+                            <label for="dusky" class="colors__label">
+                                DUSKY
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+
+                            <input type="checkbox" id="black" class="form__input__color">
+                            <label for="black" class="colors__label">
+                                BLACK
+                                <i class="fa-solid fa-check"></i>
+                            </label>
+                            <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
                 </div>
+
+                <div class="form__productDes">
+                    <p>Description</p>
+                    <div>
+                        <textarea placeholder="Description" id="productInfo__description"></textarea>
+                    </div>
+                </div>
+            
                 <div class="center">
                     <button type="button" class="add-product__btn">Add</button>
                     <button type="button" style="display: none;" class="update-product__btn">Update</button>
@@ -387,6 +411,7 @@
     <script src="./assets/js/productDetails.js"></script>
     <script src="./assets/js/editProduct.js"></script>
     <script src="./assets/js/removeProduct.js"></script>
+    <script src="./assets/js/selectProductColor.js"></script>
     <script src="./assets/js/responsive.js"></script>
 </body>
 
