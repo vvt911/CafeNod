@@ -32,7 +32,7 @@
 
 .nav-item a{
     display: block;
-    line-height: 100px;
+    line-height: 100%;
     font-size: 14px;
     letter-spacing: 0.05em;
     color: #fff;
@@ -116,7 +116,7 @@
 
 #header--change {
     position: fixed;
-    height: 100px;
+    height: 80px;
     top: 0;
     right: 0;
     left: 0;

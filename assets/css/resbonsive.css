@@ -1,4 +1,8 @@
 @media (min-width: 576px) {
+    
+}
+
+@media (min-width: 992px) {
 
 }
 
@@ -20,7 +24,7 @@
     .header__nav-container {
         display: none;
         position: absolute;
-        top: 100px;
+        top: 80px;
         left: 0;
         right: 0;
         background-color: #fff;
@@ -70,9 +74,6 @@
 
 /* Slider */
 
-@media (min-width: 992px) {
-
-}
 
 @media (min-width: 1200px) {
     .header__nav-container {
