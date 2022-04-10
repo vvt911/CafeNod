@@ -3,30 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
+    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1200 - 300))); */
+    font-size: 14px;
     font-family: Roboto, sans-serif;
 }
 
 body {
     position: relative;
 }
+
 a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
     color: #000;
-    font-size: 14px;
+    letter-spacing: 1px;
+    font-size: 1rem;
 }
+
 li {
     list-style-type: none;
 }
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .row {
     flex-direction: row;
     height: 100%;

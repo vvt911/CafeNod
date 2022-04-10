@@ -118,8 +118,8 @@
     position: fixed;
     height: 80px;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     background-color: #fff;
     z-index: 50;
     width: 100%;

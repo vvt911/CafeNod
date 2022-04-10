@@ -157,7 +157,7 @@ input[type='email']:focus {
     margin: 20px 0 20px 25px;
 }
 /* opening-hours */
-.footer-info .opening-hours {
+.footer-info-items.opening-hours {
     width: calc((100% / 2) * (2/5));
 }
 .footer-info .footer-info-items li {

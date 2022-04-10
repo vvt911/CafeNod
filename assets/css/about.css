@@ -92,6 +92,7 @@
 /* about content */
 .about-content {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 80px;
     background-color: #fff;
@@ -163,8 +164,14 @@
     z-index: -1;
 }
 
+.item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .item-image img {
-    width: 100%;
+    width: fit-content;
 }
 
 .about-left__about-us {
@@ -197,6 +204,7 @@
     text-align: left;
     font-weight: 100;
     font-size: 14px;
+    
     color: #7c7770;
 }
 

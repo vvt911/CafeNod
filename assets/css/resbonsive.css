@@ -1,18 +1,17 @@
-@media (min-width: 576px) {
-    
+/* PC */
+@media (min-width: 1200px) {
+    .header__nav-container {
+        display: block !important;
+    }
 }
 
-@media (min-width: 992px) {
-
-}
-
-@media (max-width: 1199px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
     /* Header */
     #header {
         background-color: #fff;
         top: 0;
-        right: 0;
-        left: 0;
+        width: 100%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         position: relative;
     }
@@ -70,17 +69,112 @@
     .header-btn-menu {
         display: block;
     }
-}
 
-/* Slider */
+    /* Slider */
+    .mySlides .mySlides__text-content h1 {
+        font-size: 53px;
+    }
 
+    .mySlides .mySlides__text-content p {
+        font-size: 16px;
+        font-weight: normal;
+    }
 
-@media (min-width: 1200px) {
-    .header__nav-container {
-        display: block !important;
+    .prev, .next {
+        display: none;
+    }
+
+    .text-content__btn .about-btn a,
+    .text-content__btn .reserve-btn a {
+        font-size: 15px;
+    }
+
+    /* about us */
+    .about-content__box {
+        width: 100%;
+    }
+
+    .item-image {
+        margin-top: 80px;
+    }
+
+    /* Contact */
+    #contact {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contact__img {
+        height: 360px;
+        display: block;
+        width: 100%;
+    }
+
+    .contact__contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact__content-container {
+        width: 100%;
+    }
+    
+    .contact__content-left, .contact__content-right {
+        width: 50%;
+    }
+
+    .contact__reservation {
+        width: 50%;
+    }
+
+    .contact__opening-hours {
+        width: 50%;
+    }
+
+    .contact__friday-offer {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .contact__friday-offer__img img {
+        width: 50%;
+    }
+
+    /* Shop */
+    .shop__title {
+        font-size: 35px;
+    }
+
+    /* Blog */
+    .blog__title {
+        font-size: 35px;
+    }
+
+    /* footer */
+    .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 -15px;
+    }
+
+    .footer-info-items {
+        width: 50% !important;
+    }
+
+    .footer-info-items.opening-hours .info-heading {
+        margin: 0;
+    }
+
+    .footer-info-items.opening-hours li {
+        margin-left: 0;
     }
 }
 
-@media (min-width: 1400px) {
-
+/* Phone */
+@media (max-width: 767px) {
+    /* .blog__content-box {
+        width: calc((100% - 50px) / 2);
+        width: 400px;
+    }     */
 }
