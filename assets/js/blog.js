@@ -1,7 +1,18 @@
-let indexStart = 0, indexEnd = 3;
+let scrWidth = screen.width;
+let qtyBox = 3;
+
+if (scrWidth >= 768 && scrWidth < 1200) {
+    qtyBox = 2;
+} else if (scrWidth < 768) {
+    qtyBox = 1;
+}
+
+let indexStart = 0, indexEnd = qtyBox;
 let listBox = document.getElementsByClassName("blog__content-box");
 let listBoxShow = [];
 let maxIndex = listBox.length;
+
+
 
 handleHiddenBoxes = (listHidden) => {
     listHidden.map((item) => {
@@ -11,7 +22,7 @@ handleHiddenBoxes = (listHidden) => {
 
 handleShowBoxes = () => {
     handleHiddenBoxes(listBoxShow);
-    if (listBox && listBox.length >= 3) {
+    if (listBox && listBox.length >= qtyBox) {
         listBoxShow = Array.from(listBox).slice(indexStart, indexEnd);
     } else {
         listBoxShow = listBox;

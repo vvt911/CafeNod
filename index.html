@@ -46,7 +46,8 @@
         <div class="header-container row center">
             <div class="header__logo-container">
                 <a href="#" class="center">
-                    <img src="./assets/images/logo/logo_white_1x.png" id="header__logo" alt="" title="CafeNod" width="201" height="50">
+                    <img src="./assets/images/logo/logo_white_1x.png" id="header__logo" alt="" title="CafeNod"
+                        width="201" height="50" style="margin: 0 15px;">
                 </a>
             </div>
 
@@ -72,7 +73,7 @@
                         <a href="#"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                     <div class="header-icon header-btn">
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                     </div>
                     <div class="header-icon header-btn-menu" id="btn-menu">
                         <i class="fas fa-bars"></i>
@@ -94,7 +95,7 @@
             <div class="mySlides">
                 <img src="./assets/images/slider/bg-slider-smark.jpg" alt="">
                 <div class="mySlides__text-content">
-                    <h1>TIME TO DISCOVER COFFEE HOUSE</h1>
+                    <h1>TIME TO DISCOVER <br> COFFEE HOUSE</h1>
                     <p>
                         The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given
                         an opportunity to sample.
@@ -146,9 +147,8 @@
                 </div>
             </div>
         </div>
-
         <div id="slider__social">
-            <ul>
+            <ul class="slider__social-container">
                 <li>
                     <a href="#">
                         <i class="fa-brands fa-facebook-f"></i>
@@ -169,6 +169,7 @@
                 </li>
             </ul>
         </div>
+
 
         <a class="prev" onclick="plusSlides(-1)">
             <i class="box-btn-slider fas fa-arrow-up"></i>
@@ -362,7 +363,7 @@
             <div class="menu-content__list-item">
                 <div class="item-inner chocolate">
                     <div class="entry-image">
-                        <img src="./assets/images/menu/img_04.png" height="120" width="120" alt="">
+                        <img src="./assets/images/menu/coffee-4.webp" height="120" width="120" alt="">
                         <a href="#" class="light-box">+</a>
                     </div>
                     <div class="item-content">
@@ -380,7 +381,7 @@
                 </div>
                 <div class="item-inner coffee">
                     <div class="entry-image">
-                        <img src="./assets/images/menu/img_01.png" height="120" width="120" alt="">
+                        <img src="./assets/images/menu/image-gallery8.webp" height="120" width="120" alt="">
                         <a href="#" class="light-box">+</a>
                     </div>
                     <div class="item-content">
@@ -398,7 +399,7 @@
                 </div>
                 <div class="item-inner green-tea">
                     <div class="entry-image">
-                        <img src="./assets/images/menu/img_03.png" height="120" width="120" alt="">
+                        <img src="./assets/images/menu/coffee-3.webp" height="120" width="120" alt="">
                         <a href="#" class="light-box">+</a>
                     </div>
                     <div class="item-content">
@@ -416,7 +417,7 @@
                 </div>
                 <div class="item-inner black-tea">
                     <div class="entry-image">
-                        <img src="./assets/images/menu/img_05.png" height="120" width="120" alt="">
+                        <img src="./assets/images/menu/coffee-1.webp" height="120" width="120" alt="">
                         <a href="#" class="light-box">+</a>
                     </div>
                     <div class="item-content">
@@ -434,7 +435,7 @@
                 </div>
                 <div class="item-inner chocolate">
                     <div class="entry-image">
-                        <img src="./assets/images/menu/img_06.png" height="120" width="120" alt="">
+                        <img src="./assets/images/menu/coffee-2-600x600.jpg" height="120" width="120" alt="">
                         <a href="#" class="light-box">+</a>
                     </div>
                     <div class="item-content">
@@ -456,7 +457,9 @@
 
     <!-- Start: Contact -->
     <div id="contact">
-        <div class="contact__img"></div>
+        <div class="contact__img">
+            <!-- <img src="./assets/images/offer/img_01.jpg" alt=""> -->
+        </div>
         <div class="contact__content-container">
             <div class="contact__content">
                 <div class="contact__content-left">
@@ -466,13 +469,13 @@
                     </p>
                     <p class="contact__title">DIVINE AROMA IN EVERY SINGLE CUP</p>
                     <p class="contact__text1">
-                        From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the
+                        From a cultural standpoint, coffeehouses largely serve as centers of social interaction the
                         coffeehouse provides patrons with a place to congregate, talk, read, write, entertain one
-                        another, or pass the time,
+                        another, or pass the time.
                     </p>
                     <p class="contact__text2">
                         From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the
-                        coffeehouse provides patrons with a place to congregate,
+                        coffeehouse provides patrons with a place to congregate.
                     </p>
                 </div>
                 <div class="contact__content-right">
@@ -518,14 +521,13 @@
                             <i class="fa-solid fa-fax"></i>
                         </div>
                         <ul>
-                            <li> 08744,Sadar pur 8973</li>
-                            <li> 08744,Sadar pur 8974</li>
+                            <li> 08744, Sadar pur 8973</li>
+                            <li> 08744, Sadar pur 8974</li>
                         </ul>
                     </div>
                     <div class="contact__reservation__btn center">
                         <a href="#">CONTACT US</a>
                     </div>
-
                 </div>
 
                 <div class="contact__opening-hours">
@@ -759,7 +761,7 @@
                 <button class="iconPrev icon-direct" onclick="showDivs('prev')">&#10094;</button>
                 <div class="blog__content-box">
                     <div class="content-box__img">
-                        <img src="./assets/images/blog/post-8-600x438.jpg" alt="Cup">
+                        <img src="./assets/images/blog/post-8-600x438.jpg" width="600" height="348" alt="Cup">
                         <div class="item-date">18, Mar</div>
                     </div>
                     <div class="content-box__title">
@@ -771,7 +773,7 @@
                     </div>
                     <div class="content-box__more">
                         <a href="#" class="link">
-                            READ MORE
+                            READ MORE >>
                         </a>
                     </div>
                     <ul class="content-box__direct">
@@ -787,7 +789,7 @@
                 </div>
                 <div class="blog__content-box">
                     <div class="content-box__img">
-                        <img src="./assets/images/blog/image-post-7-600x438.jpg" alt="Cup">
+                        <img src="./assets/images/blog/image-post-7-600x438.jpg" width="600" height="348" alt="Cup">
                         <div class="item-date">15, Mar</div>
                     </div>
                     <div class="content-box__title">
@@ -799,7 +801,7 @@
                     </div>
                     <div class="content-box__more">
                         <a href="#" class="link">
-                            READ MORE
+                            READ MORE >>
                         </a>
                     </div>
                     <ul class="content-box__direct">
@@ -816,7 +818,7 @@
                 </div>
                 <div class="blog__content-box">
                     <div class="content-box__img">
-                        <img src="./assets/images/blog/image-post-6-600x438.jpg" alt="Cup">
+                        <img src="./assets/images/blog/image-post-6-600x438.jpg" width="600" height="348" alt="Cup">
                         <div class="item-date">15, Mar</div>
                     </div>
                     <div class="content-box__title">
@@ -828,7 +830,7 @@
                     </div>
                     <div class="content-box__more">
                         <a href="#" class="link">
-                            READ MORE
+                            READ MORE >>
                         </a>
                     </div>
                     <ul class="content-box__direct">
@@ -845,7 +847,7 @@
                 </div>
                 <div class="blog__content-box">
                     <div class="content-box__img">
-                        <img src="./assets/images/blog/image-post-4-600x438.jpg" alt="Cup">
+                        <img src="./assets/images/blog/image-post-4-600x438.jpg" width="600" height="348" alt="Cup">
                         <div class="item-date">15, Mar</div>
                     </div>
                     <div class="content-box__title">
@@ -857,7 +859,7 @@
                     </div>
                     <div class="content-box__more">
                         <a href="#" class="link">
-                            READ MORE
+                            READ MORE >>
                         </a>
                     </div>
                     <ul class="content-box__direct">
@@ -874,7 +876,7 @@
                 </div>
                 <div class="blog__content-box">
                     <div class="content-box__img">
-                        <img src="./assets/images/blog/image-post-5-600x438.jpg" alt="Cup">
+                        <img src="./assets/images/blog/image-post-5-600x438.jpg" width="600" height="348" alt="Cup">
                         <div class="item-date">15, Mar</div>
                     </div>
                     <div class="content-box__title">
@@ -886,7 +888,7 @@
                     </div>
                     <div class="content-box__more">
                         <a href="#" class="link">
-                            READ MORE
+                            READ MORE >>
                         </a>
                     </div>
                     <ul class="content-box__direct">
@@ -921,7 +923,7 @@
             <div class="footer-spacer"></div>
 
             <h3 class="footer-heading">
-                <span class="footer-header">COFFEE BUILD YOUR FRESH MIND</span>
+                <span class="footer-header">COFFEE BUILD YOUR <br> FRESH MIND</span>
             </h3>
 
             <div class="footer-subscribe-wrapper">
@@ -1115,12 +1117,12 @@
         </div>
     </div>
 
+    <script src="./assets/js/responsive.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/blog.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/shoppingCart.js"></script>
-    <script src="./assets/js/responsive.js"></script>
 </body>
 
 </html>

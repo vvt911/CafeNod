@@ -1,6 +1,5 @@
 #contact {
     width: 100%;
-    height: 990px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Oswald';
@@ -8,8 +7,7 @@
 
 .contact__img {
     width: calc(100% / 3);
-    background: url(../images/offer/img_01.jpg) top center / cover no-repeat;
-
+    background: url(../images/offer/img_01.jpg) center center / cover no-repeat;
 }
 
 .contact__content-container {
@@ -18,30 +16,47 @@
     display: flex;
     flex-direction: column;
 }
+
 .contact__content-left,
 .contact__content-right {
+    width: 50%;
     padding: 15px;
 }
+
+.contact__content-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact__content-right img {
+    width: 90%;
+}
+
 .contact__content {
     width: 100%;
-    padding: 90px 50px 75px 50px;
+    padding: 15px;
     display: flex;
 }
 
 .contact__contact {
     display: flex;
-    height: 100%;
 }
 
+.contact__contact > div {
+    height: 420px;
+}
+.contact__content-right img {
+    width: 100%;
+}
 /* reservation */
 .contact__reservation {
     width: calc(100% / 3);
     height: 100%;
     background-color: #f5f4ef;
-    padding: 50px 45px 50px 75px;
+    padding: 50px 25px;
 }
 
-.contact__reservation > h3 {
+.contact__reservation h3 {
     font-size: 18px;
     margin-bottom: 30px;
     letter-spacing: 0.5px;
@@ -51,25 +66,34 @@
     display: flex;
     margin-bottom: 30px;
 }
+
 .reservation__icon {
     width: 40px;
     height: 40px;
     background-color: #fff;
     border-radius: 5px;
 }
+
 .reservation__icon i {
     font-size: 16px;
     color: #C7A17A;
 }
+
 .contact__reservation ul {
     margin-left: 15px;
 }
+
 .contact__reservation ul a,
 .contact__reservation ul li {
     font-size: 14px;
-    font-family: 'Roboto';
-    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
 }
+
+.contact__reservation a:hover {
+    color: #C7A17A;
+}
+
 .contact__reservation__btn {
     width: 180px;
     height: 50px;
@@ -81,32 +105,35 @@
     font-weight: 700;
     transition: all 0.3s linear;
 }
+
 .contact__reservation__btn a {
     line-height: 50px;
     font-size: 15px;
     transition: all .3s;
     color: #fff;
 }
+
 .contact__reservation__btn:hover {
     background-color: #C7A17A;
     border: 2px solid #C7A17A;
     cursor: pointer;
 }
 
-
 /* opening hours */
 .contact__opening-hours {
     width: calc(100% / 3);
     height: 100%;
     background-image: url(../images/offer/bg_01.png);
-    padding: 50px 55px 0px 75px;
+    padding: 50px 25px 0;
 }
+
 .contact__opening-hours h3 {
     color: #fff;
     font-size: 18px;
     margin-bottom: 30px;
     letter-spacing: 0.5px;
 }
+
 .contact__opening-hours li {
     color: #fff;
     font-size: 14px;
@@ -114,35 +141,43 @@
     font-family: 'Roboto';
     display: flex;
 }
+
 .contact__opening-hours li + li {
     margin-top: 15px;
 }
+
 .contact__opening-hours li label{
-    flex-grow: 1;
-}
-.contact__opening-hours li span {
-    margin-right: 60px;
-    color: #C7A17A;
+    flex: 1;
 }
 
+
+.contact__opening-hours li span {
+    /* margin-right: 60px; */
+    text-align: left;
+    flex: 3;
+    color: #C7A17A;
+}
 /* Friday offer */
 .contact__friday-offer {
     width: calc(100% / 3);
     height: 100%;
     background-color: #f5f4ef;
-    padding-top: 50px;
+    padding: 50px 25px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .contact__friday-offer h3 {
     text-align: center;
+    font-size: 18px;
     letter-spacing: 0.5px;
 }
+
 .contact__friday-offer__img {
     text-align: center;
 }
 
 .contact__friday-offer__img img {
-    width: 100%;
+    width: 90%;
 }
