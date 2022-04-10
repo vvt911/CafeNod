@@ -28,6 +28,10 @@
     align-items: flex-end;
 }
 
+.contact__content-right img {
+    width: 90%;
+}
+
 .contact__content {
     width: 100%;
     padding: 15px;
@@ -175,5 +179,5 @@
 }
 
 .contact__friday-offer__img img {
-    width: 100%;
+    width: 90%;
 }

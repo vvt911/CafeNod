@@ -2,6 +2,7 @@
     font-family: Roboto, sans-serif;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
 }
@@ -236,6 +237,7 @@
 .about-left__footer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     /* height: 100px; */
 }
 

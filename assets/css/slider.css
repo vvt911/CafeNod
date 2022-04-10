@@ -1,11 +1,11 @@
 #slider {
-    /* margin-top: 80px; */
     position: relative;
+    padding-bottom: 40px;
+    background: rgb(15, 15, 15) url(../images/backgrounds/bg_01.png) no-repeat top center;
 }
 
 #slider__content{
     width: 100%;
-    background: rgb(15, 15, 15) url(../images/backgrounds/bg_01.png) no-repeat top center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,15 +19,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 120px 25px 90px 25px;
+    margin: 120px 25px 40px 25px;
 }
 
 .mySlides img{
     border-radius: 20px;
     width: 100%;
-    /* max-width: 1200px; */
     animation: imgFadeIn 1.5s linear;
 }
+
 @keyframes imgFadeIn {
     from {
         opacity: 0.5;
@@ -64,14 +64,13 @@
     }
 } 
 
-
-
 .mySlides .mySlides__text-content p {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     padding: 20px 0;
     animation: pFadeIn 2s ease; 
 }
+
 @keyframes pFadeIn{ 
     from {
         opacity: 0;
@@ -81,7 +80,8 @@
         opacity: 1;
         transform: translateX(0px);
     }
-} 
+}
+
 .text-content__btn {
     display: flex;
     height: 54px;
@@ -112,6 +112,7 @@
     border-radius: 5px;
     animation: btnFadeInLeft 2s ease;
 }
+
 @keyframes btnFadeInLeft {
     from {
         opacity: 0;
@@ -131,6 +132,7 @@
     margin-left: 10px;
     animation: btnFadeInRight 2s ease;
 }
+
 @keyframes btnFadeInRight {
     from {
         opacity: 0;
@@ -151,26 +153,29 @@
 /* slider__social */
 
 #slider__social {
-    position: absolute;
-    bottom: 40px;
-    height: 45px;
+    position: relative;
+    width: 80%;
     display: flex;
-    left: 10%;
+    left: 5%;
 }
 
-#slider__social ul {
+.slider__social-container {
     height: 100%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 #slider__social ul li {
-    height: 100%;
-    margin-right: 43px;
+    display: inline-block;
+}
+
+.slider__social-container li {
+    margin: 10px 43px 10px 0;
 }
 
 #slider__social ul a {
-    display: block;
     height: 100%;
     line-height: 45px;
     color: #fff;
