@@ -8,8 +8,39 @@ function seeProductDetails() {
     // Lấy ra list tên các sản phẩm
     let productsName = document.querySelectorAll('.product__name')
 
+
+    function selectProductDetailsColors() {
+        let productDetailsColorsChecked = document.querySelectorAll('.product-details__colors__label i')
+        let productDetailsColorsLabel = document.querySelectorAll('.product-details__colors__label')
+        let productDetailsColors = document.querySelectorAll('.product-details__color')
+        productDetailsColorsLabel.forEach((label, index) => {
+            label.onclick = function () {
+                if (!productDetailsColors[index].checked) {
+                    productDetailsColorsChecked[index].style.display = 'flex'
+                    for (let i = 0; i < productDetailsColors.length; i++) {
+                        if (i == index) {continue}
+                        productDetailsColorsChecked[i].style.display = 'none'
+                    }
+                } 
+            }
+        })
+    }
+
+
+
     for (let i in productsName) {
         productsName[i].onclick = function () {
+            // lấy danh sách màu
+            let productDetailsColorList = productsInfo[i].colors
+            let colorListHTML = ``
+            for (let color of productDetailsColorList) {
+                colorListHTML += `<input type="radio" id="product-details__colors__${color}" class="product-details__color" name="product-details__color">
+                                <label for="product-details__colors__${color}" class="product-details__colors__label">
+                                    ${color}
+                                    <i class="fa-solid fa-check"></i>
+                                </label>`
+            }
+
             productDetails.style.display = 'flex'
             productDetails.innerHTML = `
             <div id="product-details">
@@ -32,7 +63,7 @@ function seeProductDetails() {
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="product-details__count-rating">
-                            1 reviews
+                            0 reviews
                         </div>
                     </div>
 
@@ -44,13 +75,11 @@ function seeProductDetails() {
                         ${productsInfo[i].price}
                     </p>
 
-                    <div class="product-details__color">
+                    <div class="product-details__colors">
                         <p>Color</p>
-                        <ul>
-                            <li>BROWN</li>
-                            <li>DUSKY</li>
-                            <li>YELLOW</li>
-                        </ul>
+                        <div class="product-details__colors-container">
+                            ${colorListHTML}
+                        </div>
                     </div>
 
                     <div class="product-details__btn-container">
@@ -94,6 +123,7 @@ function seeProductDetails() {
                 </div>
             </div>
             `
+            selectProductDetailsColors()
         }
     }
 }
