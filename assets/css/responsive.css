@@ -76,6 +76,11 @@
     .prev, .next {
         display: none;
     }
+
+    /* footer */
+    .footer-divider {
+        margin-top: -30px !important;
+    }
 }
 
 /* laptop */
