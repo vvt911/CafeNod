@@ -481,4 +481,25 @@
         bottom: 25px;
         right: 25px;
     }
+
+    /* login */
+    .login-container {
+        padding: 15px !important;
+    }
+
+    .form__input {
+        width: calc(100% - 20px);
+    }
+
+    .login__other__account {
+        flex-wrap: wrap;
+    }
+
+    .other {
+        width: 100%;
+    }
+
+    .other + .other {
+        margin-top: 10px;
+    }
 }
