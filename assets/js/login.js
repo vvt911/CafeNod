@@ -9,12 +9,10 @@ let users = [
         password: "456",
         permission: "admin"
     },
-    {
-        username: "guest",
-        password: "123",
-        permission: "guest"
-    },
 ]
+if (!window.localStorage.usersAcc) {
+    window.localStorage.setItem('usersAcc', JSON.stringify(users));
+}
 
 function check_user(username, password, users) {
     for (let i in users) {
@@ -25,15 +23,22 @@ function check_user(username, password, users) {
     return false;
 }
 
-
 let loginBtn = document.querySelector('.login-btn')
 
 loginBtn.onclick = function() {
+    let usersAcc = JSON.parse(window.localStorage.usersAcc)
+
     let username = document.querySelector('#userName')
     let password = document.querySelector('#password')
-    let user = check_user(username.value, password.value, users);
-    console.log(user);
-    if(user) {
-        window.location.href = "index.html"
+
+    let user = check_user(username.value, password.value, usersAcc);
+    if (username.value == '') {
+        alert("Please enter your username!")
+    } else if (password.value == '') {
+        alert("Please enter your password!")
+    } else if (user == false) {
+        alert("Account does not exist!")
+    } else if (user.permission == "admin"){
+        window.location.href = "admin/index.html"
     }
 }
