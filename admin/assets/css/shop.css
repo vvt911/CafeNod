@@ -1,0 +1,157 @@
+#shop {
+    background-color: #ECEAE3;
+    margin: 0;
+    width: 100%;
+    padding: 80px 0;
+}
+
+#shop a {
+    font-weight: 700;
+}
+.shop-container {
+    max-width: 1200px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Oswald, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.shop__subtitle {
+    font-size: 14px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+    font-weight: 700;
+    padding: 0 15px;
+}
+.shop__title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 67px;
+    margin-bottom: 60px;
+    align-items: center;
+    padding: 0 15px;
+}
+.shop__title {
+    font-size: 45px;
+    font-family: 'Oswald';
+    font-weight: 700;
+}
+
+.shop__btn a {
+    font-size: 15px;
+}
+
+.shop__products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-container {
+    width: calc(100%/3);
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 427px;
+    margin-bottom: 30px;
+    transition: all .4s ease;
+}
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product__img {
+    background-color: #f5f4ef;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+}
+.product__img img{
+    width: 100%;
+}
+.product__name {
+    display: block;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .4s;
+}
+.product__name:hover {
+    color: #C7A17A;
+}
+.product__more {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.product__price {
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #C7A17A;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.product__price p{
+    display: inline;
+    opacity: 0.6;
+    text-decoration-line: line-through;
+}
+.product__select-btn {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 34px;
+    line-height: 34px;
+    background-color: transparent;
+    transition: all .3s;
+}
+.product__select-btn a {
+    font-size: 12px;
+    transition: all .3s;
+}
+.product__select-btn:hover {
+    background-color: #C7A17A;
+    border: 2px solid #C7A17A;
+}
+.product__select-btn:hover a {
+    color: #fff;
+}
+
+
+.product__remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.product__edit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.product__edit:hover i,
+.product__remove:hover i {
+    opacity: 0.6;
+}
