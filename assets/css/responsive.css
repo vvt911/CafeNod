@@ -1,7 +1,13 @@
+/* ==== responsive ==== */
 /* PC */
 @media (min-width: 1200px) {
     .header__nav-container {
         display: block !important;
+    }
+
+    .nav-item--login,
+    .nav-item--logout {
+        display: none !important;
     }
 
 }
@@ -64,12 +70,23 @@
         color: #000;
     }
 
+    .header__search,
+    .header__shoppingCart{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
     .header-btn {
         display: none;
     }
 
     .header-btn-menu {
         display: block;
+    }
+
+    .nav-item--login,
+    .nav-item--logout {
+        background-color: rgba(249, 213, 213, 0.444);
     }
 
     /* slider btn */
@@ -83,7 +100,7 @@
     }
 }
 
-/* laptop */
+/* tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
     /* Slider */
     .mySlides .mySlides__text-content h1 {
@@ -154,6 +171,10 @@
     /* Shop */
     .shop__title {
         font-size: 35px;
+    }
+
+    .shopping-cart {
+        width: 50%;
     }
 
     /* Blog */
@@ -418,6 +439,10 @@
         font-size: 25px;
     }
 
+    .shopping-cart {
+        width: 100%;
+    }
+
     .shop__btn {
         width: 100%;
         margin-top: 15px;
@@ -489,15 +514,18 @@
     }
 
     /* login */
-    .login-container {
+    .login-container,
+    .register-container {
         padding: 15px !important;
     }
 
-    .login-container .form__input {
+    .login-container .form__input,
+    .resgister-container .form__register {
         width: calc(100% - 20px);
     }
 
-    .login__other__account {
+    .login__other__account,
+    .register__other__account {
         flex-wrap: wrap;
     }
 
