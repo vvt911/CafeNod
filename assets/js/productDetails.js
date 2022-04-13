@@ -8,7 +8,7 @@ function seeProductDetails() {
     // Lấy ra list tên các sản phẩm
     let productsName = document.querySelectorAll('.product__name')
 
-
+    // chọn màu
     function selectProductDetailsColors() {
         let productDetailsColorsChecked = document.querySelectorAll('.product-details__colors__label i')
         let productDetailsColorsLabel = document.querySelectorAll('.product-details__colors__label')
@@ -25,8 +25,6 @@ function seeProductDetails() {
             }
         })
     }
-
-
 
     for (let i in productsName) {
         productsName[i].onclick = function () {
@@ -124,6 +122,7 @@ function seeProductDetails() {
             </div>
             `
             selectProductDetailsColors()
+            addToCart()
         }
     }
 }
