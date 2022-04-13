@@ -1,0 +1,224 @@
+#blog {
+    width: 100%;
+    background-image: url(../images/blog/bg-blog-image.webp);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+}
+
+#blog a {
+    font-weight: 700;
+}
+
+.blog {
+    max-width: 1200px;
+    width: 100%;
+    margin: 80px auto;
+    height: 869px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog__subtitle {
+    font-family: 'Roboto';
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.blog__title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.blog__content {
+    width: 100%;
+    height: 576px;
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.blog__content-box {
+    /* width: calc((100% - 50px) / 3); */
+    width: 370px;
+    height: 570px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 10px;
+    position: relative;
+}
+.blog__content-box:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.blog__content-box:hover .item-date {
+    display: block;
+}
+
+.content-box__img {
+    width: 100%;
+    height: 277px;
+    border: 15px solid transparent;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+.content-box__img img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+.content-box__img .item-date {
+    width: 70px;
+    height: 40px;
+    background-color: #12100D;
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    animation: dateFadeIn .3s ease;
+    display: none;
+    
+}
+@keyframes dateFadeIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.content-box__title {
+    padding: 0 20px 15px;
+}
+
+.content-box__title a {
+    font-size: 22px;
+    transition: all .3s;
+}
+.content-box__title a:hover {
+    color: #C7A17A;
+}
+
+.content-box__description {
+    font-family: oboto, sans-serif;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.content-box__more {
+    width: calc(100% - 22px*2);
+    height: 40px;
+    margin: 0 22px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(236, 229, 225);
+    position: absolute;
+    bottom: 51px;
+}
+
+.link {
+    padding: 10px 0;
+    color: #C7A17A;
+    font-size: 14px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+.content-box__direct {
+    display: flex;
+    padding: 15px 22px;
+    opacity: 0.5;
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.content-box__direct-category,
+.content-box__direct-comments {
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.content-box__direct-category i,
+.content-box__direct-comments i {
+    color: #C7A17A;
+    padding: 0 3px;
+}
+
+
+.iconNext {
+    position: relative;
+    top: calc(366px / 2 + 50px);
+    right: 0;
+}
+
+.iconPrev {
+    position: relative;
+    top: calc(366px / 2 + 50px);
+    left: 0;
+}
+
+.icon-direct {
+    width: 25px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    font-weight: bold;
+}
+.icon-direct:active {
+    opacity: 0.6;
+}
+
+.shop__btn,
+.blog__btn {
+    height: 50px;
+    transition: .4s;
+    border: 2px solid #ccc ;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+.shop__btn a,
+.blog__btn a {
+    transition: all 0.3s linear;
+    padding: 0 30px;
+    line-height: 50px;
+}
+.shop__btn:hover,
+.blog__btn:hover {
+    cursor: pointer;
+    background-color: #C7A17A;
+    border: 2px solid #C7A17A;
+}
+.shop__btn:hover a,
+.blog__btn:hover a {
+    color: #fff;
+}

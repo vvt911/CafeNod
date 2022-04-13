@@ -1,0 +1,587 @@
+/* PC */
+@media (min-width: 1200px) {
+    .header__nav-container {
+        display: block !important;
+    }
+
+}
+
+/* laptop tablet phone */
+@media (max-width: 1199px) {
+    /* Header */
+    #header {
+        background-color: #fff;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+        height: 80px;
+    }
+
+    .header__logo-container img {
+        content: url(../images/logo/logo-dark.webp);
+    }
+
+    .header__nav-container {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        height: fit-content;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+        transition: all .3s linear;
+    }
+    
+    .navbar {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        height: 60px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-item + .nav-item {
+        margin-left: 0;
+    }
+    
+    .nav-item a {
+        color: #000;
+        line-height: 60px;
+        padding-left: 15px;
+    }
+
+    .nav-item:hover {
+        background-color: rgba(220, 218, 218, 0.3);
+    }
+    
+    .header__right a {
+        color: #000;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .header-btn-menu {
+        display: block;
+    }
+
+    /* slider btn */
+    .prev, .next {
+        display: none;
+    }
+
+    /* footer */
+    .footer-divider {
+        margin-top: -30px !important;
+    }
+}
+
+/* laptop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Slider */
+    .mySlides .mySlides__text-content h1 {
+        font-size: 53px;
+    }
+
+    .mySlides .mySlides__text-content p {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .text-content__btn .about-btn a,
+    .text-content__btn .reserve-btn a {
+        font-size: 15px;
+    }
+
+    /* about us */
+    .about-content__box {
+        width: 100%;
+    }
+
+    .item-image {
+        margin-top: 80px;
+    }
+
+    /* Contact */
+    #contact {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contact__img {
+        height: 360px;
+        display: block;
+        width: 100%;
+    }
+
+    .contact__contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact__content-container {
+        width: 100%;
+    }
+    
+    .contact__content-left, .contact__content-right {
+        width: 50%;
+    }
+
+    .contact__reservation {
+        width: 50%;
+    }
+
+    .contact__opening-hours {
+        width: 50%;
+    }
+
+    .contact__friday-offer {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .contact__friday-offer__img img {
+        width: 50%;
+    }
+
+    /* Shop */
+    .shop__title {
+        font-size: 35px;
+    }
+
+    /* Blog */
+    .blog__title {
+        font-size: 35px;
+    }
+
+    /* footer */
+    .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 -15px;
+    }
+
+    .footer-info-items {
+        width: 50% !important;
+    }
+
+    .footer-info-items.opening-hours .info-heading {
+        margin: 0;
+    }
+
+    .footer-info-items.opening-hours li {
+        margin-left: 0;
+    }
+
+    .footer-info-items:nth-child(1), .footer-info-items:nth-child(3) {
+        /* margin-left: 15px; */
+        padding-left: 30px;
+    }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+    /* slider */
+    #slider {
+        height: fit-content !important;
+    }
+    #slider__content {
+        height: 518px;
+    }
+    .mySlides {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .mySlides img {
+        height: 100%;
+        width: auto;
+    }
+
+    .mySlides .mySlides__text-content {
+        max-width: 300px;
+        left: 25px;
+    }
+     
+    .mySlides__text-content h1 {
+        font-size: 32px !important;
+    }
+
+    .mySlides__text-content p {
+        font-size: 16px !important;
+    }
+
+    .about-btn a , .reserve-btn a {
+        font-size: 12px !important;
+    }
+
+    .slider__dots {
+        display: none;
+    }
+
+    #slider__social {
+        margin-top: 30px;
+    }
+
+    .slider__social-container li {
+        width: 100% !important;
+    }
+
+    /* about */
+    .about-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-item {
+        width: 100%;
+    }
+
+    .about-item + .about-item {
+        margin-top: 30px;
+    }
+
+    .about-item__title {
+        font-size: 15px;
+    }
+
+    .about-item__step {
+        font-size: 14px;
+    }
+
+    .about-content__box {
+        width: 100%;
+    }
+
+    .about-heading {
+        font-size: 35px;
+    }
+
+    .about-btn {
+        font-size: 15px;
+    }
+    
+    .about-footer__info {
+        margin: 15px 0 15px 0;
+    }
+
+    .about-content--right img {
+        width: 100%;
+    }
+
+    /* menu */
+    .custom-heading {
+        font-size: 36px;
+    }
+
+    .menu-content__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .item-inner {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .entry-image {
+        width: 100%;
+        max-width: inherit;
+        max-height: inherit;
+        margin-right: 0;
+    }
+
+    .entry-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-content {
+        max-width: inherit;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+
+    
+    .entry-price {
+        margin-left: 0;
+        margin-top: 15px;
+        flex-grow: inherit;
+    }
+    
+    .inner-price::before {
+        display: none;
+    }
+
+    .inner-price {
+        font-size: 35px;
+    }
+
+    /* contact */
+    #contact {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contact__img {
+        height: 360px;
+        display: block;
+        width: 100%;
+    }
+    
+    .contact__content-container {
+        width: 100%;
+    }
+    
+    .contact__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contact__content-left, .contact__content-right {
+        width: 100%;
+    }
+    
+    .contact__title {
+        font-size: 35px;
+    }
+
+    .contact__contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact__reservation, 
+    .contact__opening-hours,
+    .contact__friday-offer {
+        width: 100%;
+    }
+
+    .contact__reservation__btn {
+        width: 100%;
+    }
+
+    .contact__friday-offer {
+        justify-self: center;
+    }
+
+    .contact__friday-offer__img img {
+        width: 90%;
+    }
+
+    /* Evaluate */
+    .evaluate__bg {
+        width: 100%;
+    }
+
+    .evaluate__img-small {
+        display: none;
+    }
+
+    .evaluate-container {
+        flex-wrap: wrap;
+    }
+
+    .evaluate__img, .evaluate__content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .evaluate__title {
+        font-size: 25px;
+    }
+
+    .evaluate__rate {
+        padding-bottom: 25px;
+    }
+
+    /* shop */
+    .shop__title-container {
+        flex-wrap: wrap;
+    }
+
+    .shop__title {
+        font-size: 25px;
+    }
+
+    .shop__btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    /* blog */
+    .blog__btn {
+        width: 90%;
+    }
+
+    /* footer */
+    .footer-header {
+        font-size: 30px;
+    }
+
+    .widget-wrap {
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .subscribe-btn.btn {
+        margin-top: 10px;
+        max-width: inherit;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .footer-info-items {
+        width: 100% !important;
+    }
+
+    .info-heading {
+        margin: 0 !important;
+    }
+
+    .footer-info .contact li {
+        margin-left: 0;
+    }
+
+    .entry-title, .footer-info .contact li a {
+        text-transform: inherit;
+        font-size: 15px;
+    }
+
+    .footer-info-items.opening-hours li {
+        margin-left: 0;
+    }
+
+    .post-item {
+        margin: 15px 0 !important;
+    }
+
+    #btn-back-to-top {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    /* login */
+    .login-container {
+        padding: 15px !important;
+    }
+
+    .login-container .form__input {
+        width: calc(100% - 20px);
+    }
+
+    .login__other__account {
+        flex-wrap: wrap;
+    }
+
+    .other {
+        width: 100%;
+    }
+
+    .other + .other {
+        margin-top: 10px;
+    }
+
+    /* out product */
+    #shoptitle {
+        height: 230px;
+        background: url(../images/backgrounds/bg-page-title.webp) no-repeat center center / cover;
+    }
+
+    .shop-container__title {
+        font-size: 30px;
+        position: absolute;
+        top: -150px;
+    }
+
+    .shop-container__breadcrumb {
+        font-size: 15px;
+        position: absolute;
+        top: 130px;
+    }
+
+
+    #add-product-container {
+        margin-top: -80px;
+        min-height: fit-content;
+    }
+
+    #add-product {
+        width: 100%;
+        height: auto;
+    }
+
+    .add-product {
+        padding: 40px 0;
+        
+    }
+
+    .form__title {
+        font-size: 35px;
+    }
+
+    .form__input-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form__input-container p,
+    .form__productDes p {
+        padding-left: 0;
+    }
+
+    .add-product__btn {
+        width: 100%;
+        margin: 15px;
+    }
+
+    #product-details {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-details__img-container {
+        width: 100%;
+        height: auto;
+        /* padding: 15px; */
+    }
+    
+    .product-details__img {
+        padding: 15px;
+    }
+
+    .product-details__info {
+        width: 100%;
+    }
+    
+    .product-details__btn {
+        width: 100%;
+    }
+}

@@ -23,10 +23,9 @@
     <link rel="stylesheet" href="./assets/css/shop.css">
     <link rel="stylesheet" href="./assets/css/shopProduct.css">
     <link rel="stylesheet" href="./assets/css/productDetails.css">
-    <link rel="stylesheet" href="./assets/css/addProduct.css">
     <link rel="stylesheet" href="./assets/css/shopingCart.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/resbonsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- link icon -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
@@ -69,7 +68,7 @@
                         <a href="#"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                     <div class="header-icon header-btn">
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                     </div>
                     <div class="header-icon header-btn-menu" id="btn-menu">
                         <i class="fas fa-bars"></i>
@@ -106,9 +105,6 @@
     <div id="shop">
         <div class="shop-title-container shoptitle__container">
             <h3 class="list-product">List product</h3>
-            <div class="btn-add-product admin">
-                <a href="#add-product">Add products</a>
-            </div>
         </div>
         <div class="shop-container">
             <div class="shop__products"></div>
@@ -116,77 +112,6 @@
     </div>
     <!-- End: Shop -->
 
-    <!-- Form add product -->
-    <div id="add-product-container" class="center">
-        <div id="add-product">
-            <form action="" class="add-product">
-                <h3 class="form__title">PRODUCT INFOMATION</h3>
-                <div class="form__productInfo">
-                    <div class="form__input-container">
-                        <p>Product's name</p>
-                        <div>
-                            <input type="text" placeholder="Enter product name" id="productInfo__name"
-                                class="form__input" required />
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                    </div>
-                    <div class="form__input-container">
-                        <p>Product's image</p>
-                        <input type="file" accept="image/*" id="productInfo__img" required />
-                        <div>
-                            <label for="productInfo__img" class="form__input form__input__choose-image">
-                                <span>Choose image</span>
-                            </label>
-                            <i class="fa-solid fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="form__input-container">
-                        <p>Price</p>
-                        <div>
-                            <input type="text" placeholder="Enter price" id="productInfo__price" class="form__input"
-                                required />
-                            <i class="fa-solid fa-sterling-sign"></i>
-                        </div>
-                    </div>
-                    <div class="form__input-container">
-                        <p>Color</p>
-                        <div class="form__input form__input__colors">
-                            <input type="checkbox" id="brown" class="form__input__color">
-                            <label for="brown" class="colors__label">
-                                BROWN
-                                <i class="fa-solid fa-check"></i>
-                            </label>
-                            
-                            <input type="checkbox" id="dusky" class="form__input__color">
-                            <label for="dusky" class="colors__label">
-                                DUSKY
-                                <i class="fa-solid fa-check"></i>
-                            </label>
-
-                            <input type="checkbox" id="black" class="form__input__color">
-                            <label for="black" class="colors__label">
-                                BLACK
-                                <i class="fa-solid fa-check"></i>
-                            </label>
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form__productDes">
-                    <p>Description</p>
-                    <div>
-                        <textarea placeholder="Description" id="productInfo__description"></textarea>
-                    </div>
-                </div>
-            
-                <div class="center">
-                    <button type="button" class="add-product__btn">Add</button>
-                    <button type="button" style="display: none;" class="update-product__btn">Update</button>
-                </div>
-            </form>
-        </div>
-    </div>
     <!-- Start: Footer -->
     <div class="footer-wrapper">
         <div id="footer">
@@ -386,33 +311,12 @@
         </div>
     </div>
 
-    <!-- Show form add product -->
-    <script>
-        let addProductsBtn = document.querySelector('.btn-add-product')
-        let formAddProduct = document.querySelector('#add-product-container')
-
-        addProductsBtn.onclick = function () {
-            formAddProduct.style.display = 'flex';
-            addProductBtn.style.display = 'block'
-            updateProductBtn.style.display = 'none'
-
-            // reset giá trị tại form
-            productName.value = ''
-            fileName.innerHTML = 'Choose image'
-            productPrice.value = ''
-            productDescription.value = ''
-        }
-    </script>
-
     <script src="./assets/js/initProducts.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/shoppingCart.js"></script>
-    <script src="./assets/js/addProduct.js"></script>
-    <script src="./assets/js/productDetails.js"></script>
-    <script src="./assets/js/editProduct.js"></script>
-    <script src="./assets/js/removeProduct.js"></script>
-    <script src="./assets/js/selectProductColor.js"></script>
     <script src="./assets/js/responsive.js"></script>
+    <script src="./assets/js/loadProduct.js"></script>
+    <script src="./assets/js/productDetails.js"></script>
 </body>
 
 </html>

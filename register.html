@@ -32,7 +32,11 @@
                     <label for="password" class="form__label">Password</label>
                     <input type="password" id="password" class="form__input" placeholder="Enter your password" required/>
                 </div>
-                <input type="submit" class="register-btn" value="Register">
+                <div class="confirm-password-container input-container">
+                    <label for="confirm-password" class="form__label">Confirm password</label>
+                    <input type="password" id="confirm-password" class="form__input" placeholder="Confirm your password" required/>
+                </div>
+                <input type="button" class="register-btn" value="Register">
             </form>
             
             <div class="register__other">
@@ -64,11 +68,27 @@
         let registerBtn = document.querySelector('.register-btn')
         let userName = document.getElementById('userName')
         let password = document.getElementById('password')
+        let confirmPassword = document.getElementById('confirm-password')
         registerBtn.onclick = function () {
-            if (userName.value == '' && password.value == '')
-                alert('Please enter username and password!')
-            else
-                confirm('Sign up success!')
+            if (userName.value == ''){
+                alert('Please enter username!')
+            } else if (password.value == '') {
+                alert('Please enter password!')
+            } else if (confirmPassword.value == '') {
+                alert("Please confirm password!")
+            } else if (password.value != confirmPassword.value) {
+                alert("Password incorrect!")
+            } else {
+                let usersAcc = JSON.parse(window.localStorage.usersAcc)
+                usersAcc.push({
+                    username: userName.value,
+                    password: password.value,
+                    permission: 'admin'
+                })
+                window.localStorage.setItem('usersAcc', JSON.stringify(usersAcc));
+                alert("Sign Up Success!")
+                location.href = 'login.html'
+            }
         }
     </script>
 </body>
