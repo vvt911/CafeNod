@@ -2731,7 +2731,7 @@ label[for='product-details__colors__black'] {
 }
 
 .shopping-cart__items {
-    height: 700px;
+    height: 70%;
     overflow-x: hidden;
     overflow-y: auto;
 }
