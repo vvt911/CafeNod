@@ -1,16 +1,16 @@
 // Responsive header
 const btnShowHeaderMenu = document.getElementById("btn-menu");
-const headerNavContainer = document.querySelector('.header__nav-container');
-const navbar = document.querySelector('.navbar');
-const newNavItem = document.createElement('li')
+const headerNavContainer = document.querySelector(".header__nav-container");
+const navbar = document.querySelector(".navbar");
+const newNavItem = document.createElement("li");
 let showNavResponsive = false;
 
-btnShowHeaderMenu.addEventListener('click', () => {
+btnShowHeaderMenu.addEventListener("click", () => {
     if (!showNavResponsive) {
         headerNavContainer.style.display = "block";
         header.style.boxShadow = "inherit";
-        newNavItem.className = "nav-item nav-item--login";
-        newNavItem.innerHTML = "<a href=\"login.html\">Login >></a>";
+        newNavItem.className = "nav-item nav-item--logout";
+        newNavItem.innerHTML = "<a href=\"../index.html\">Logout >> </a>";
         navbar.appendChild(newNavItem);
     } else {
         headerNavContainer.style.display = "none";

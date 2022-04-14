@@ -39,6 +39,6 @@ loginBtn.onclick = function() {
     } else if (user == false) {
         alert("Account does not exist!")
     } else if (user.permission == "admin"){
-        window.location.href = "admin/index.html"
+        window.location.href = "indexAdmin.html"
     }
 }
