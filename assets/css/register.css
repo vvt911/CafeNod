@@ -172,9 +172,3 @@ p {
     font-family: 'Roboto';
     font-weight: 300;
 }
-
-@media (max-width: 754px) {
-    .other a{
-        display: none;
-    }
-}
