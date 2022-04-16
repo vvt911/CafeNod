@@ -6,7 +6,7 @@ function addToCart() {
         let colorRadio = document.querySelectorAll('.product-details__color')
         function checkRadioColor() {
             for (let i = 0; i < colorRadio.length; i++) {
-                if (colorRadio[i].checked == true) {
+                if (colorRadio[i].checked === true) {
                     return true
                 }
             }
@@ -14,7 +14,7 @@ function addToCart() {
         }
 
         addToCartBtn.onclick = function () {
-            if (checkRadioColor() == false) {
+            if (checkRadioColor() === false) {
                 alert('Please choose color')
             } else {
                 shoppingCart.style.display = "flex"

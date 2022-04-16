@@ -34,6 +34,7 @@ handleShowBoxes = () => {
 }
 handleShowBoxes();
 
+// Button prev, next
 function showDivs(type) {
     switch (type) {
         case 'next':
